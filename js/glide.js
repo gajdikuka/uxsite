@@ -6,10 +6,10 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     breakpoints: {
-        799: {
+        899: {
             slidesPerView: 1,
         },
-        800: {
+        900: {
             slidesPerView: 3,
         },
     },

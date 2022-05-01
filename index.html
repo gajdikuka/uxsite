@@ -8,41 +8,39 @@
     <meta name="author" content="aps wonder">
     <title>aps wonder</title>
     <link rel="icon" href="img/logo.svg" />
-    <link href="./css/main.css" rel="stylesheet">
-    <link href="./fa/css/all.css" rel="stylesheet">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="icons/css/fontello.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body class="color-main-dark">
     <header>
-        <nav class="navbar bg-white navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-nav navbar-light" aria-label="Main navigation">
+            <div class="container d-flex justify-content-between">
                 <a class="navbar-brand" href="#main">
-                    <img src="img/logo.svg" height="26" alt="aps wonder logo" loading="lazy" style="margin-top: -1px;">
+                    <h3 class="fw-bold m-0"><span class="color-main-blue">aps</span> wonder</h3>
                 </a>
-                <button class="navbar-toggler navbutton p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbutton p-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                     <div class="navicon"><span></span><span></span><span></span><span></span></div>
                 </button>
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                    <ul class="fw-semi-bold navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item my-2 mx-3">
+                    <ul class="fw-semi-bold navbar-nav ms-auto my-3">
+                        <li class="nav-item mx-3">
                             <a class="nav-link" href="#services">Services</a>
                         </li>
-                        <li class="nav-item my-2 mx-3">
+                        <li class="nav-item mx-3">
                             <a class="nav-link" href="#packages">Packages</a>
                         </li>
-                        <li class="nav-item my-2 mx-3">
-                            <a class="nav-link d-none d-lg-block contact-button button button-regular" href="#contact" role="button">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link px-4 py-2 d-none d-lg-block button button-regular" href="#contact" role="button">
                                 <span>Contact us</span>
                             </a>
                             <a class="nav-link d-lg-none" href="#contact" role="button">
                                 <span style="color: #EF40A9;">Contact us</span>
                             </a>
                         </li>
-                        <li class="nav-item my-2 mx-3 dropdown">
+                        <li class="nav-item mx-3 dropdown">
                             <a class="nav-link dropdown-toggle disabled" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="img/uk.svg" height="26" alt="UK flag" loading="lazy" style="margin-top: -1px;"> Eng
                             </a>
@@ -61,30 +59,31 @@
     </header>
 
     <main id="main">
-
+        <canvas class="orb-canvas"></canvas>
+        <div class="orb-overlay"> </div>
         <div class="container d-flex vh-75">
-            <div class="align-self-end h-75">
-                <div class="row h-75">
-                    <div class="col-12">
-                        <h1 class="display-1 fw-bold lh-1 mb-3">Let your <span id="typed"></span><br>be heard in the<br>digital world</h1>
-                    </div>
+            <div class="row ">
+                <div class="align-self-end">
+                    <h1 class="display-2 fw-bold">Let your <span id="typed" class="color-main-blue"></span></h1>
+                    <h1 class="display-2 fw-bold my-3">be heard in the</h1>
+                    <h1 class="display-2 fw-bold">in the digital world</h1>
                 </div>
-                <div class="col-lg-8">
-                    <p class="lead">We are a digital product design company committed to help bussiness reach their audiences through best in class digital experiences</p>
+                <div class="col-lg-8 align-self-end">
+                    <p class="lead">We are a digital product design company committed to help business reach their audiences through best in class digital experiences</p>
                 </div>
             </div>
         </div>
         </div>
 
         <div id="services" class="container px-4 py-5">
-            <h2 class="fw-bold">What we do</h2>
-            <div class="row g-4 py-5 row-cols-1">
+            <h2 class="display-7 fw-semi-bold">What we do</h2>
+            <div class="row g-4 pt-5 pb-lg-5 pb-4 row-cols-1">
                 <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-lg-3 col-3 my-auto d-flex justify-content-end">
-                            <img src="img/target.svg" width="100%" alt="target" loading="lazy" style="margin-top: -1px;">
+                        <div class="col-3 col-sm-3 my-auto">
+                            <img src="img/target.svg" width="100%" alt="target" loading="lazy">
                         </div>
-                        <div class="col-lg-5 col-9">
+                        <div class="col-lg-7 col-12 mt-4">
                             <h2 class="fw-bold color-main-blue">Digital strategy</h2>
                             <p>Improve your business with in-depth research based strategy. We study the market, analyze competitors and more importantly your customers to help you improve engagement.</p>
                             <p class="color-main-grey">Brand strategy / UX audit / Market research</p>
@@ -92,28 +91,28 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-4 py-5 row-cols-1 justify-content-end">
+            <div class="row g-4 py-lg-5 py-4 row-cols-1 justify-content-end">
                 <div class="col-lg-8">
-                    <div class="row justify-content-end">
-                        <div class="col-lg-3 col-3 my-auto d-flex justify-content-end">
-                            <img src="img/branding.svg " width="100% " alt="branding " loading="lazy " style="margin-top: -1px; ">
+                    <div class="row">
+                        <div class="col-3 col-sm-3 my-auto">
+                            <img src="img/branding.svg " width="100% " alt="branding " loading="lazy ">
                         </div>
-                        <div class="col-lg-5 col-9">
+                        <div class="col-lg-7 col-12 mt-4">
                             <h2 class="fw-bold color-main-blue ">Branding</h2>
-                            <p>Stand out from your competitors with a brand that resonates with your target audiance. Branding is not just a logo, but an unified identity that is aligned with your mission. We create a cohesive brand identity that spans across
+                            <p>Stand out from your competitors with a brand that resonates with your target audience. Branding is not just a logo, but an unified identity that is aligned with your mission. We create a cohesive brand identity that spans across
                                 all media and touchpoints.</p>
-                            <p class="color-main-grey ">Brand identity / Graphic desing / Logo design</p>
+                            <p class="color-main-grey ">Brand identity / Graphic design / Logo design</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-4 py-5 row-cols-1 ">
+            <div class="row g-4 py-lg-5 py-4 row-cols-1 ">
                 <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-lg-3 col-3 my-auto d-flex justify-content-end">
-                            <img src="img/ux.svg " width="100% " alt="ux " loading="lazy " style="margin-top: -1px; ">
+                        <div class="col-3 col-sm-3 my-auto">
+                            <img src="img/ux.svg " width="100% " alt="ux " loading="lazy ">
                         </div>
-                        <div class="col-lg-5 col-9">
+                        <div class="col-lg-7 col-12 mt-4">
                             <h2 class="fw-bold color-main-blue ">Digital strategy</h2>
                             <p>UX design is a great tool to support business growth & sales by improving the customer experience on your digital interfaces. We are here to get you started or move your company to the next level in your jurney by creating
                                 easy-to-use digital products that embrace your brand’s identity.</p>
@@ -124,45 +123,46 @@
             </div>
         </div>
 
+        <img class="triangle" src="img/triangle.svg" alt="target " loading="lazy">
         <div class="container px-4 py-5">
-            <h2 class="fw-bold">Our approach is</h2>
+            <h2 class="display-7 fw-semi-bold">Our approach is</h2>
             <div class="row justify-content-between px-4 py-5">
-                <div class="col-lg-3 bg-white rounded-more shadow my-5 px-4 py-5">
+                <div class="col-lg-3 bg-white rounded-more shadow px-4 py-5">
                     <div class="row mb-3 justify-content-center">
                         <div class="col-6 my-auto d-flex justify-content-center">
-                            <img src="img/human.svg" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
+                            <img src="img/human.png" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-11 text-center justify-content-center">
                             <h5 class="fw-bold ">human centered</h5>
-                            <p class="color-main-grey ">Innovation starts with people. By applying behavioral science and customer research we design engaging digital products.</p>
+                            <p class="color-main-grey mt-3">Innovation starts with people. By applying behavioral science and customer research we design engaging digital products.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 bg-white rounded-more shadow my-5 px-4 py-5">
-                    <div class="row mb-3 justify-content-center">
-                        <div class="col-6 my-auto d-flex justify-content-center">
-                            <img src="img/goal.svg" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
+                <div class="col-lg-3 bg-white rounded-more shadow px-4 py-5 my-lg-0 my-3">
+                    <div class="row mb-3 justify-content-center ">
+                        <div class="col-6 my-auto d-flex justify-content-center ">
+                            <img src="img/goal.png " height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-11 text-center justify-content-center">
+                    <div class="row justify-content-center ">
+                        <div class="col-11 text-center justify-content-center ">
                             <h5 class="fw-bold ">goal oriented</h5>
-                            <p class="color-main-grey ">The key to success is collaboration, we believe in shaping the project together keeps the goal in front of us and the delivery on track.</p>
+                            <p class="color-main-grey mt-3">The key to success is collaboration, we believe in shaping the project together keeps the goal in front of us and the delivery on track.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 bg-white rounded-more shadow my-5 px-4 py-5">
+                <div class="col-lg-3 bg-white rounded-more shadow px-4 py-5">
                     <div class="row mb-3 justify-content-center">
                         <div class="col-6 my-auto d-flex justify-content-center">
-                            <img src="img/future.svg" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
+                            <img src="img/future.png" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-11 text-center justify-content-center">
                             <h5 class="fw-bold ">future-proof</h5>
-                            <p class="color-main-grey ">Design trends come and go, but simple-to-use digital products based on research & user testing will always keep you out of the crowd.</p>
+                            <p class="color-main-grey mt-3">Design trends come and go, but simple-to-use digital products based on research & user testing will always keep you out of the crowd.</p>
                         </div>
                     </div>
                 </div>
@@ -170,16 +170,16 @@
         </div>
 
         <div id="packages" class="container px-4 pt-5 mb-n5">
-            <h2 class="fw-bold mb-4">Packages</h2>
-            <div class="swiper mySwiper">
+            <h2 class="display-7 fw-semi-bold">Packages</h2>
+            <div class="swiper mySwiper py-5">
                 <div class="swiper-wrapper">
                     <div style="height: auto;" class="swiper-slide bg-transparent">
-                        <div class="col rounded-more">
-                            <div class="card rounded-more">
+                        <div class="col rounded-more h-100">
+                            <div class="card rounded-more h-100">
                                 <div class="card-body">
                                     <div class="row mb-3 justify-content-center">
                                         <div class="col-3 my-auto d-flex justify-content-center">
-                                            <img src="img/paperplane.svg" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
+                                            <img src="img/paperplane.png" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
@@ -187,113 +187,113 @@
                                             <h5 class="fw-bold color-main-blue">Basic</h5>
                                             <p class="color-main-grey pb-4 border-bottom">Onepager in a long-scrolling layout or website redesign</p>
                                         </div>
-                                        <div style="min-height: 50vh;" class="col-11 text-start">
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;user friendly</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;responsive</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;invidual design</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;search engine optimalisation</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;development</p>
+                                        <div class="col-11 text-start">
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;user friendly</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;responsive</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;individual design</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;search engine optimization</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;development</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="card-header rounded-bottom-more py-3 text-white bg-primary border-primary">
-                                    <P class="my-0 fw-normal">from 1 300 EUR</p>
+                                    <P class="my-0 fw-semi-bold">from € 1 300 </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div style="height: auto;" class="swiper-slide bg-transparent">
-                        <div class="col rounded-more">
-                            <div class="card rounded-more">
+                        <div class="col rounded-more h-100">
+                            <div class="card rounded-more h-100">
                                 <div class="card-body">
                                     <div class="row mb-3 justify-content-center">
                                         <div class="col-3 my-auto d-flex justify-content-center">
-                                            <img src="img/airplane.svg" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
+                                            <img src="img/airplane.png" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-11 text-center justify-content-center">
-                                            <h5 class="fw-bold color-main-blue">Basic</h5>
-                                            <p class="color-main-grey pb-4 border-bottom">Onepager in a long-scrolling layout or website redesign</p>
+                                            <h5 class="fw-bold color-main-blue">Business</h5>
+                                            <p class="color-main-grey pb-4 border-bottom">Unique website with different pages and sections</p>
                                         </div>
-                                        <div style="min-height: 50vh;" class="col-11 text-start">
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;user friendly</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;responsive</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;invidual design</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;search engine optimalisation</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;search engine optimalisation</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;search engine optimalisation</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;development</p>
+                                        <div class="col-11 text-start">
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;user friendly</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;responsive</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;individual design</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;search engine optimization</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;development</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;illustrations, icons</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;multilingual</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;up to 6 pages of content</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="card-header rounded-bottom-more py-3 text-white bg-primary border-primary">
-                                    <P class="my-0 fw-normal">from 2 000 EUR</p>
+                                    <P class="my-0 fw-semi-bold">from € 2 000</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div style="height: auto;" class="swiper-slide bg-transparent">
-                        <div class="col rounded-more">
-                            <div class="card rounded-more">
+                        <div class="col rounded-more h-100">
+                            <div class="card rounded-more h-100">
                                 <div class="card-body">
                                     <div class="row mb-3 justify-content-center">
                                         <div class="col-3 my-auto d-flex justify-content-center">
-                                            <img src="img/rocket.svg" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
+                                            <img src="img/rocket.png" height="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
                                         </div>
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-11 text-center justify-content-center">
-                                            <h5 class="fw-bold color-main-blue">Basic</h5>
-                                            <p class="color-main-grey pb-4 border-bottom">Onepager in a long-scrolling layout or website redesign</p>
+                                            <h5 class="fw-bold color-main-blue">Individual</h5>
+                                            <p class="color-main-grey pb-4 border-bottom">Complex websites, apps or digital products with multiple functions</p>
                                         </div>
-                                        <div style="min-height: 50vh;" class="col-11 text-start">
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;user friendly</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;responsive</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;invidual design</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;invidual design</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;invidual design</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;invidual design</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;invidual design</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;search engine optimalisation</p>
-                                            <p class="mb-3"><i style="color: #FDC966" class="fa-solid fa-circle-check pr-4"></i> &nbsp;&nbsp;development</p>
+                                        <div class="col-11 text-start">
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i> &nbsp;&nbsp;user friendly</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;responsive</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;individual design</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;search engine optimization</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;development</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;illustrations, icons</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;multilingual</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;any number of pages</p>
+                                            <p class="mb-3"><i style="color: #FDC966" class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;user testing</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="card-header rounded-bottom-more py-3 text-white bg-primary border-primary">
-                                    <P class="my-0 fw-normal">on request</p>
+                                    <P class="my-0 fw-semi-bold">on request</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="mt-5 swiper-pagination"></div>
             </div>
         </div>
 
 
-        <div style="background-color: #0148F929" class="container rounded-more px-4 pt-5 mt-n5">
+        <div style="background-color: #0148F929" class="container rounded-more px-4 pt-5 mt-n7 mb-5">
             <br><br><br>
             <h4 class="fw-bold pt-5">Additional services</h4>
-            <div class="row justify-content-between px-4">
-                <div class="col-lg-5 rounded-more bg-white my-5 px-4 pt-3">
+            <div class="row justify-content-between px-4 pb-5">
+                <div class="col-lg-5 rounded-more bg-white mt-3 px-4 pt-3">
                     <div class="row justify-content-center">
-                        <div class="col-11 text-center justify-content-center">
+                        <div class="col-12 text-center justify-content-center py-3">
                             <h5 class="fw-bold ">Brand strategy</h5>
-                            <h5 class="fw-bold color-main-blue">from 750 EUR</h5>
+                            <h5 class="fw-bold color-main-blue my-2">from € 750</h5>
                             <p class="color-main-grey ">In-depth research with makret analaysis, competitor and customer research</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 rounded-more bg-white my-5 px-4 pt-3">
+                <div class="col-lg-5 rounded-more bg-white mt-3 px-4 pt-3">
                     <div class="row justify-content-center">
-                        <div class="col-11 text-center justify-content-center">
+                        <div class="col-12 text-center justify-content-center py-3">
                             <h5 class="fw-bold ">Company branding</h5>
-                            <h5 class="fw-bold color-main-blue">from 750 EUR</h5>
+                            <h5 class="fw-bold color-main-blue my-2">from € 750</h5>
                             <p class="color-main-grey ">Unique branding for you company from logo to business cards whatever you need</p>
                         </div>
                     </div>
@@ -301,56 +301,92 @@
             </div>
         </div>
 
-        <div id="contact" class="container px-4 py-5">
-            <h2 class="fw-bold color-main-blue">Let’s talk about your vision</h2>
+        <div id="contact" class="container px-4 py-5 mt-5">
+            <h2 class="display-7 fw-semi-bold color-main-blue">Let’s talk about your vision</h2>
             <div class="row my-3">
                 <div class="col-lg-7">
                     <p>Share your current needs and goals via our contact form or write to
-                        <span class="fw-bold">info@studio.com.</span> We will be in touch with you shortly to discuss your challenges further, and to come up with a custom solution for you!</p>
+                        <a class="fw-bold" href="mailto: info@studio.com"><u>info@studio.com.</u></a>
+                        <br>We will be in touch with you shortly to discuss your challenges further, and to come up with a custom solution for you!</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8 mb-md-0 mb-5">
-                    <div class="container mt-5">
-                        <form class="row g-3">
-                            <div class="col-lg-6">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" required="">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="companyName" class="form-label">Company name</label>
-                                <input type="text" class="form-control" id="companyName">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="emailInfo" class="form-label">E-mail address</label>
-                                <input type="email" class="form-control" id="emailInfo" required="">
-                            </div>
-                            <div class="col-md-12">
-                                <label for="message" class="form-label">How can we help?</label>
-                                <textarea class="form-control" id="message" rows="6" required=""></textarea>
-                            </div>
-                            <div class="col-md-12">
-                                <button type="submit" class="button button-regular py-2 px-3">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-lg-8 mb-md-0 mb-5 pt-5 pe-lg-5 pe-0">
+                    <form class="row g-3">
+                        <div class="col-lg-6 mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required="">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="companyName" class="form-label">Company name</label>
+                            <input type="text" class="form-control" id="companyName">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="emailInfo" class="form-label">E-mail address</label>
+                            <input type="email" class="form-control" id="emailInfo" required="">
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="message" class="form-label">How can we help?</label>
+                            <textarea class="form-control" id="message" rows="9" required="" style="resize: none;"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="button button-regular px-4 py-2">Submit</button>
+                        </div>
+                        <img class="cube" src="img/cube.svg" alt="target " loading="lazy">
+                    </form>
                 </div>
-                <div class="col-lg-4 bg-white rounded-more my-5 px-4 pt-3">
+
+
+                <div class="col-lg-4 shadow bg-white rounded-more my-5 py-4 pe-5" style="height: fit-content;">
                     <div class="row justify-content-center my-3">
                         <div class="col-12 text-center justify-content-center">
                             <h5 class="fw-bold color-main-blue">What happens next?</h5>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-3 d-none d-sm-block text-center justify-content-center">
-                            <img src="img/steps.svg" width="100% " alt="target " loading="lazy " style="margin-top: -1px; ">
+                    <div class="row">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img style="z-index: 1;" src="img/step1.svg" alt="target " loading="lazy">
                         </div>
-                        <div class="col-9 justify-content-center">
+                        <div class="col-8 d-flex align-items-center">
                             <p class="fw-bold">Have an online call</p>
+                        </div>
+                    </div>
+                    <div class="row mt-n3">
+                        <div class="col-4 d-flex justify-content-center">
+                            <div class="vertical-dotted-line"></div>
+                        </div>
+                        <div class="col-8">
                             <p class="color-main-grey ">We arrange an online meeting to dicuss your needs and goals in detail.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img style="z-index: 1;" src="img/step2.svg" alt="target " loading="lazy">
+                        </div>
+                        <div class="col-8 d-flex align-items-center">
                             <p class="fw-bold">Create a proposal</p>
+                        </div>
+                    </div>
+                    <div class="row mt-n3">
+                        <div class="col-4 d-flex justify-content-center">
+                            <div class="vertical-dotted-line"></div>
+                        </div>
+                        <div class="col-8">
                             <p class="color-main-grey ">We create a proposal including a budget estimate and a timeline. </p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-4 d-flex align-items-center justify-content-center">
+                            <img style="z-index: 1;" src="img/step3.svg" alt="target " loading="lazy">
+                        </div>
+                        <div class="col-8 d-flex align-items-center">
                             <p class="fw-bold">Kick-off our collaboration</p>
+                        </div>
+                    </div>
+                    <div class="row mt-n3">
+                        <div class="col-4">
+                        </div>
+                        <div class="col-8">
                             <p class="color-main-grey ">After agreeing on the terms and conditions, we are ready to start working together.</p>
                         </div>
                     </div>
@@ -362,15 +398,19 @@
             <div class="container ">
                 <h3>Leave no user behind!</h3>
                 <br>
-                <p><img src="img/mail.svg " alt="e-mail"> info@studio.com</p>
+                <p><img src="img/mail.svg " alt="e-mail" style="margin-top: -2px;">&nbsp;&nbsp;<a class="" href="mailto: info@studio.com"><u>info@studio.com</u></a></p>
             </div>
         </footer>
     </main>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/offcanvas.js "></script>
+    <script src="js/navscroll.js "></script>
     <script src="js/typed.js "></script>
     <script src="js/glide.js "></script>
+    <script src="js/bundle.js "></script>
 </body>
 
 </html>
