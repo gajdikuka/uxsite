@@ -315,7 +315,7 @@
                     <form name="contact" method="POST" data-netlify="true" class="row g-3">
                         <div class="col-lg-6 mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" required="">
+                            <input type="text" class="form-control" name="name" id="name" required="">
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="companyName" class="form-label">Company name</label>
@@ -323,11 +323,11 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="emailInfo" class="form-label">E-mail address</label>
-                            <input type="email" class="form-control" id="emailInfo" required="">
+                            <input type="email" name="email" class="form-control" id="emailInfo" required="">
                         </div>
                         <div class="col-md-12 mb-3">
                             <label for="message" class="form-label">How can we help?</label>
-                            <textarea class="form-control" id="message" rows="9" required="" style="resize: none;"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="9" required="" style="resize: none;"></textarea>
                         </div>
                         <div class="col-md-12">
                             <button type="submit" class="button button-regular px-4 py-2">Submit</button>
