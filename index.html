@@ -144,7 +144,7 @@
                 <div class="col-lg-3 bg-white rounded-more shadow px-4 py-5">
                     <div class="row mb-3 justify-content-center">
                         <div class="col-6 my-auto d-flex justify-content-center">
-                            <img src="img/human.png" height="100% " alt="human " loading="lazy ">
+                            <img src="img/human.png" height="100% " width="" alt="human " loading="lazy ">
                         </div>
                     </div>
                     <div class="row justify-content-center">
@@ -424,7 +424,16 @@
     <script src="js/typed.js "></script>
     <script src="js/removehash.js "></script>
     <script src="js/glide.js "></script>
-    <script src="js/bundle.js "></script>
+    <script>
+        function loadJs(url) {
+            var script = document.createElement('script');
+            script.src = url;
+            document.documentElement.firstChild.appendChild(script);
+        }
+        window.onload = function() {
+            loadJs("js/bundle.js ");
+        }
+    </script>
 </body>
 
 </html>
