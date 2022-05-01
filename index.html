@@ -312,7 +312,12 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 mb-md-0 mb-5 pt-5 pe-lg-5 pe-0">
-                    <form name="contact" method="POST" data-netlify="true" class="row g-3">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="row g-3">
+                        <p style="display: none;">
+                            <label>
+                              just for bots: <input name="bot-field" />
+                            </label>
+                        </p>
                         <div class="col-lg-6 mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" name="name" id="name" required="">
