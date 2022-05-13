@@ -17,8 +17,18 @@ body {
     color: #0148F9;
 }
 
+.color-main-blue-20 {
+    color: #0148F9;
+    opacity: 20%;
+}
+
 .color-main-grey {
     color: #667DA3;
+}
+
+.border-color-main-grey {
+    border-color: #667DA3;
+    opacity: 100% !important;
 }
 
 .color-main-dark {
@@ -27,6 +37,14 @@ body {
 
 .color-main-pink {
     color: #EF40A9;
+}
+
+.light-blue-bg {
+    background-color: #0148F929
+}
+
+.dark-blue-bg {
+    background-color: #1A325A
 }
 
 
@@ -113,10 +131,6 @@ a {
     color: #FDC966;
 }
 
-.additional-services-box {
-    background-color: #0148F929
-}
-
 .step-icon {
     z-index: 1;
 }
@@ -155,13 +169,40 @@ a {
 }
 
 
+/* accordion */
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../img/minus.svg") !important;
+    background-position-y: center !important;
+}
+
+.accordion-button::after {
+    background-image: url("../img/plus.svg") !important;
+    background-position-y: center !important;
+}
+
+.accordion-header,
+.accordion-item,
+.accordion-button {
+    background-color: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.accordion-button {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
 /* footer */
 
 footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background: #1A325A;
-    color: #FFFFFF;
+    background: #FFFFFF;
 }
 
 footer p {
@@ -217,6 +258,7 @@ footer p {
     height: 100%;
     pointer-events: none;
     z-index: -2;
+    opacity: 60%;
 }
 
 .orb-overlay {
