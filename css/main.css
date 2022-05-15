@@ -196,6 +196,11 @@ a {
     margin-bottom: 0 !important;
 }
 
+.accordion-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 
 /* footer */
 
@@ -321,9 +326,19 @@ footer p {
     }
 }
 
-.navbar.scrolled {
-    background-color: #ffffff !important;
-    transition: background-color 400ms linear;
+
+/* header */
+
+.scrolled-down {
+    transform: translateY(-100%);
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-underline .nav-link {
