@@ -319,11 +319,11 @@ footer p {
         visibility: visible;
         transform: translateX(-100%);
     }
-    .nav-item:last-child {
+    /* FOR LANGUAGE SELECTION .nav-item:last-child {
         position: absolute;
         right: 1rem;
         bottom: 2rem;
-    }
+    } */
 }
 
 
