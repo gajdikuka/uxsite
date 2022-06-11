@@ -249,7 +249,7 @@ footer p {
     width: 100%;
     bottom: 1px;
     z-index: 2999;
-    box-shadow: 0 0 100px 200px white;
+    box-shadow: 0 0 40px 100px white;
     pointer-events: none;
 }
 
