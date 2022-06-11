@@ -238,7 +238,7 @@ footer p {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
     z-index: 2999;
     pointer-events: none;
 }
@@ -249,7 +249,7 @@ footer p {
     width: 100%;
     bottom: 1px;
     z-index: 2999;
-    box-shadow: 0 0 40px 100px white;
+    box-shadow: 0 100px 40px 200px white;
     pointer-events: none;
 }
 
