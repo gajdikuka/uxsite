@@ -1,0 +1,52 @@
+.rectangle {
+    position: absolute;
+    left: 0;
+    width: 66vw !important;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.blockquote {
+    font-size: 1rem !important;
+    border-left: 0.3rem solid rgba(1, 72, 249, 0.20);
+    color: #1A325A;
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 60%;
+    padding-left: 1rem;
+    width: 100%;
+}
+
+
+/* accordion */
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../img/accordion/minus_dark.svg") !important;
+    background-position-y: center !important;
+}
+
+.accordion-button::after {
+    background-image: url("../img/accordion/plus_dark.svg") !important;
+    background-position-y: center !important;
+}
+
+.accordion-button {
+    background-color: rgba(1, 72, 249, 0.08) !important;
+}
+
+.accordion-header,
+.accordion-item,
+.accordion-button {
+    border: none !important;
+    color: #1A325A !important;
+    box-shadow: none !important;
+    width: 100%;
+}
+
+.accordion-button {
+    margin-bottom: 0 !important;
+}
+
+.accordion-body {
+    background-color: rgba(1, 72, 249, 0.08) !important;
+}
