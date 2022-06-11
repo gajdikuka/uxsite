@@ -1,0 +1,9 @@
+.section {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+.section--intro {
+    background: linear-gradient(100deg, #ffffff, #F0F4FF);
+}
