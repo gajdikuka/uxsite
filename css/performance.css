@@ -1,9 +1,18 @@
 .rectangle {
     position: absolute;
     left: 0;
+    top: 12vh;
     width: 66vw !important;
     z-index: -1;
     overflow: hidden;
+}
+
+@media (max-width: 991.98px) {
+    .rectangle {
+        left: -95vw;
+        top: 45vh;
+        width: 160vw !important;
+    }
 }
 
 .blockquote {
@@ -45,6 +54,10 @@
 
 .accordion-button {
     margin-bottom: 0 !important;
+}
+
+.accordion-body {
+    padding: 1rem 0.5rem !important;
 }
 
 .accordion-body {
