@@ -3,6 +3,7 @@
     left: 0;
     top: 12vh;
     width: 80vw !important;
+    max-height: 600px !important;
     z-index: -1;
     overflow: hidden;
 }
