@@ -10,6 +10,10 @@ body {
     padding-top: 56px;
 }
 
+p {
+    line-height: 28px !important;
+}
+
 
 /* colors */
 
@@ -36,7 +40,7 @@ body {
 
 .border-color-main-grey {
     border-color: #667DA3;
-    opacity: 100% !important;
+    opacity: 20% !important;
 }
 
 .color-main-dark {
@@ -103,7 +107,7 @@ body {
 }
 
 .vh-90 {
-    height: 90vh!important;
+    height: 95vh!important;
 }
 
 .mw-100 {
@@ -323,7 +327,6 @@ footer p {
 
 .scrolled-down {
     transform: translateY(-100%);
-    background-color: transparent;
     transition: all 0.3s ease-in-out;
 }
 
@@ -337,6 +340,10 @@ footer p {
     padding-top: .75rem;
     padding-bottom: .75rem;
     font-size: .875rem;
+}
+
+.navbar {
+    background: #FFFFFF !important;
 }
 
 #navbarSideCollapse {
