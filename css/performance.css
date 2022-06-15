@@ -1,9 +1,9 @@
 .rectangle {
     position: absolute;
     left: 0;
-    top: 12vh;
+    top: 10vh;
     width: 80vw !important;
-    max-height: 600px !important;
+    max-height: 500px !important;
     z-index: -1;
     overflow: hidden;
 }
