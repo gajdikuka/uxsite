@@ -123,6 +123,12 @@ a {
     margin-top: -2.5rem !important;
 }
 
+@media (min-width: 1400px) {
+    .ms-xxl-6 {
+        margin-left: 5rem!important;
+    }
+}
+
 .mt-n10 {
     margin-top: -10rem !important;
 }
@@ -142,6 +148,11 @@ a {
 
 .gy-6 {
     --bs-gutter-y: 8rem !important;
+}
+
+.rotate-180:before {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 
