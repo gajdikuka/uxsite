@@ -150,10 +150,9 @@ a {
     --bs-gutter-y: 8rem !important;
 }
 
-.half-size {
-    -moz-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+.rotate-180:before {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 
