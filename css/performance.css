@@ -54,6 +54,10 @@
 }
 
 .accordion-button {
+    -webkit-appearance: initial;
+}
+
+.accordion-button {
     margin-bottom: 0 !important;
 }
 
