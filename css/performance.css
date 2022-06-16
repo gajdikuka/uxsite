@@ -51,10 +51,11 @@
     color: #1A325A !important;
     box-shadow: none !important;
     width: 100%;
+    -webkit-appearance: none;
 }
 
-.accordion-button {
-    -webkit-appearance: initial;
+.input {
+    -webkit-appearance: none
 }
 
 .accordion-button {
