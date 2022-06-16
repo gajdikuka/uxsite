@@ -56,10 +56,10 @@
 .accordion-header,
 .accordion-item,
 .accordion-button,
+.accordion-item,
+.accordion,
 textarea,
-input[type="text"],
-input[type="button"],
-input[type="submit"] {
+input {
     -webkit-appearance: none;
     border-radius: 0;
 }
