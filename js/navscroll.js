@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 el_autohide.classList.remove('scrolled-up');
                 el_autohide.classList.add('scrolled-down');
             }
+            document.querySelector('.offcanvas-collapse').classList.remove('open')
+            document.querySelector('.navicon').classList.remove('open');
             last_scroll_top = scroll_top;
         });
     }
