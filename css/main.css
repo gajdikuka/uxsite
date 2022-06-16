@@ -307,6 +307,12 @@ footer p {
     position: relative;
 }
 
+.blockquote {
+    margin-block-end: 0em !important;
+    margin-inline-start: 10px !important;
+    margin-inline-end: 10px !important;
+}
+
 
 /* nav */
 
