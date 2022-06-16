@@ -53,17 +53,6 @@
     width: 100%;
 }
 
-.accordion-header,
-.accordion-item,
-.accordion-button,
-.accordion-item,
-.accordion,
-textarea,
-input {
-    -webkit-appearance: none;
-    border-radius: 0;
-}
-
 .accordion-button {
     margin-bottom: 0 !important;
 }
