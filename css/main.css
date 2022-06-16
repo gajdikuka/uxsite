@@ -172,6 +172,12 @@ a {
     transform: rotate(180deg);
 }
 
+@media (min-width: 1400px) {
+    .ms-xxl-6 {
+        margin-left: 6rem!important;
+    }
+}
+
 
 /* services, contact */
 
@@ -308,9 +314,7 @@ footer p {
 }
 
 .blockquote {
-    margin-block-end: 0em !important;
-    margin-inline-start: 10px !important;
-    margin-inline-end: 10px !important;
+    max-width: 80% !important;
 }
 
 
