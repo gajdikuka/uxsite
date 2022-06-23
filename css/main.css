@@ -23,6 +23,19 @@ h5 {
     padding-top: 2rem;
 }
 
+.small {
+    font-size: 13px !important;
+}
+
+.small-navbar {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+}
+
+.navbar {
+    padding-top: 0rem !important;
+}
+
 
 /* colors */
 
