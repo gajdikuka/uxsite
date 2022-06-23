@@ -18,4 +18,24 @@ document.addEventListener("DOMContentLoaded", function() {
             last_scroll_top = scroll_top;
         });
     }
+
+    small_navbar = document.querySelector('.small-navbar')
+    small_navbar_height = small_navbar.offsetHeight;
+    document.body.style.paddingTop = small_navbar_height + 'px';
+    if (small_navbar) {
+        var last_scroll_top = 0;
+        window.addEventListener('scroll', function() {
+            let scroll_top = window.scrollY;
+            if (small_navbar && !document.querySelector('.navicon').classList.contains('open')) {
+                if (scroll_top <= last_scroll_top || scroll_top <= small_navbar_height * 3) {
+                    small_navbar.classList.remove('small-scrolled-down');
+                    small_navbar.classList.add('small-scrolled-up');
+                } else {
+                    small_navbar.classList.remove('small-scrolled-up');
+                    small_navbar.classList.add('small-scrolled-down');
+                }
+                last_scroll_top = scroll_top;
+            }
+        });
+    }
 });

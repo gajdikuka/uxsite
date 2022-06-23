@@ -66,7 +66,7 @@
     <header>
         <nav class="navbar-expand-lg fixed-nav navbar" aria-label="Main navigation">
             <div class="container d-flex justify-content-between">
-                <a class="navbar-brand remove-hash" href="../#main">
+                <a class="navbar-brand remove-hash d-lg-none" href="../#main">
                     <h3 class="fw-bold m-0">
                         <img style="height: 2rem;" src="img/logo.png" alt="logo">
                         <span class="color-main-blue">&nbsp;&nbsp;aps </span>wonder
@@ -75,78 +75,91 @@
                 <button class="navbar-toggler navbutton p-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
                     <div class="navicon"><span></span><span></span><span></span><span></span></div>
                 </button>
-                <div class="navbar-collapse flex-column offcanvas-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav ms-auto border-bottom small-navbar">
-                        <li class="nav-item color-main-grey">
-                            <a class="nav-link remove-hash" href="tel:+43 676 6231339">
-                                <img src="img/phone.svg" alt="telephone icon ">
-                                <span class="small">+43 676 6231339</span>
+                <div class="navbar-collapse d-flex flex-column justify-content-between offcanvas-collapse" id="navbarsExampleDefault">
+                    <div class="row border-lg-top justify-content-between order-0 order-lg-1 w-100">
+                        <div class="col d-flex align-items-center d-none d-lg-block">
+                            <a class="navbar-brand remove-hash " href=" ../#main ">
+                                <h3 class="fw-bold m-0 ">
+                                    <img style="height: 2rem; " src="img/logo.png " alt="logo ">
+                                    <span class="color-main-blue ">&nbsp;&nbsp;aps </span>wonder
+                                </h3>
                             </a>
-                        </li>
-                        <li class="nav-item color-main-grey">
-                            <a class="nav-link remove-hash">
-                                <span class="small">|</span>
-                            </a>
-                        </li>
-                        <li class="nav-item color-main-grey">
-                            <a class="nav-link remove-hash" href="mailto: info@apswonder.com">
-                                <img src="img/email.svg" alt="email icon ">
-                                <span class="small">info@apswonder.com</span>
-                            </a>
-                        </li>
-                        <li class="nav-item color-main-grey">
-                            <a class="nav-link remove-hash">
-                                <span class="small">|</span>
-                            </a>
-                        </li>
-                        <li class="nav-item color-main-grey">
-                            <a class="nav-link remove-hash" href="https://goo.gl/maps/wNKBGAbiMkAGSQMf8" target="_blank">
-                                <img src="img/location.svg" alt="location icon ">
-                                <span class="small">Rum, Austria</span>
-                            </a>
-                        </li>
-                        <li class="nav-item color-main-grey">
-                            <a class="nav-link remove-hash">
-                                <span class="small">|</span>
-                            </a>
-                        </li>
-                        <li class="nav-item color-main-grey">
-                            <a class="nav-link remove-hash" href="https://goo.gl/maps/k2BxnbGJ86S51zEy5" target="_blank">
-                                <img src="img/location.svg" alt="location icon ">
-                                <span class="small">Budapest, Hungary</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="fw-semi-bold navbar-nav ms-auto my-3">
-                        <li class="nav-item mx-3">
-                            <a class="nav-link remove-hash" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link remove-hash" href="../#usecases">Usecases</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link remove-hash" href="#packages">Packages</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link remove-hash px-4 py-2 d-none d-lg-block button " href="#contact" role="button">
-                                <span>Contact us</span>
-                            </a>
-                            <a class="nav-link remove-hash d-lg-none" href="#contact" role="button">
-                                <span class="color-main-pink">Contact us</span>
-                            </a>
-                        </li>
-                        <!-- FOR LANGUAGE SELECTION ALSO SEE CSS <li class="nav-item mx-3 dropdown">
-                            <a class="nav-link dropdown-toggle disabled" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="img/uk.svg" height="26" alt="UK flag" loading="lazy"> Eng
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="img/uk.svg" height="26" alt="AU flag" loading="lazy"> DE
+                        </div>
+                        <div class="col d-flex justify-content-lg-end ">
+                            <ul class="fw-semi-bold navbar-nav my-3 ">
+                                <li class="nav-item mx-3 ">
+                                    <a class="nav-link remove-hash " href="#services ">Services</a>
+                                </li>
+                                <li class="nav-item mx-3 ">
+                                    <a class="nav-link remove-hash " href="../#usecases ">Usecases</a>
+                                </li>
+                                <li class="nav-item mx-3 ">
+                                    <a class="nav-link remove-hash " href="#packages ">Packages</a>
+                                </li>
+                                <li class="nav-item mx-3 ">
+                                    <a class="nav-link remove-hash px-4 py-2 d-none d-lg-block button " href="#contact " role="button ">
+                                        <span>Contact us</span>
+                                    </a>
+                                    <a class="nav-link remove-hash d-lg-none " href="#contact " role="button ">
+                                        <span class="color-main-pink ">Contact us</span>
                                     </a>
                                 </li>
+                                <!-- FOR LANGUAGE SELECTION ALSO SEE CSS <li class="nav-item mx-3 dropdown ">
+                                    <a class="nav-link dropdown-toggle disabled " href="# " id="dropdown01 " data-bs-toggle="dropdown " aria-expanded="false ">
+                                        <img src="img/uk.svg " height="26 " alt="UK flag " loading="lazy "> Eng
+                                    </a>
+                                    <ul class="dropdown-menu " aria-labelledby="dropdown01 ">
+                                        <li>
+                                            <a class="dropdown-item " href="# ">
+                                                <img src="img/uk.svg " height="26 " alt="AU flag " loading="lazy "> DE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li> -->
                             </ul>
-                        </li> -->
+                        </div>
+
+                    </div>
+                    <ul class="navbar-nav ms-lg-auto small-navbar order-1 order-lg-0 ">
+                        <li class="nav-item color-main-grey ">
+                            <a class="nav-link remove-hash " href="tel:+43 676 6231339 ">
+                                <img src="img/phone.svg " alt="telephone icon ">
+                                <span class="small ">+43 676 6231339</span>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-block nav-item color-main-grey ">
+                            <a class="nav-link remove-hash ">
+                                <span class="small ">|</span>
+                            </a>
+                        </li>
+                        <li class="nav-item color-main-grey ">
+                            <a class="nav-link remove-hash " href="mailto: info@apswonder.com ">
+                                <img src="img/email.svg " alt="email icon ">
+                                <span class="small ">info@apswonder.com</span>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-block nav-item color-main-grey ">
+                            <a class="nav-link remove-hash ">
+                                <span class="small ">|</span>
+                            </a>
+                        </li>
+                        <li class="nav-item color-main-grey ">
+                            <a class="nav-link remove-hash " href="https://goo.gl/maps/wNKBGAbiMkAGSQMf8 " target="_blank ">
+                                <img src="img/location.svg " alt="location icon ">
+                                <span class="small ">Rum, Austria</span>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-block nav-item color-main-grey ">
+                            <a class="nav-link remove-hash ">
+                                <span class="small ">|</span>
+                            </a>
+                        </li>
+                        <li class="nav-item color-main-grey ">
+                            <a class="nav-link remove-hash " href="https://goo.gl/maps/k2BxnbGJ86S51zEy5 " target="_blank ">
+                                <img src="img/location.svg " alt="location icon ">
+                                <span class="small ">Budapest, Hungary</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -154,308 +167,308 @@
 
     </header>
 
-    <main id="main">
-        <div class="orb-overlay"> </div>
-        <div class="container d-flex  flex-wrap vh-90">
-            <div class="container-fluid align-self-center">
-                <div class="row pt-5">
-                    <div class="col-12">
-                        <div class="hero-background">
+    <main id="main ">
+        <div class="orb-overlay "> </div>
+        <div class="container d-flex flex-wrap vh-90 ">
+            <div class="container-fluid align-self-center ">
+                <div class="row pt-5 ">
+                    <div class="col-12 ">
+                        <div class="hero-background ">
                             <section class="ms-xxl-6 section section--intro ">
-                                <div class="isolayer isolayer--deco1 isolayer--shadow">
-                                    <ul class="grid">
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="./performance">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/onepager.png" alt="01" />
+                                <div class="isolayer isolayer--deco1 isolayer--shadow ">
+                                    <ul class="grid ">
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href="./performance ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/onepager.png " alt="01 " />
                                             </a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/5.png" alt="02" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/5.png " alt="02 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/restaurant.png" alt="03" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/restaurant.png " alt="03 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/brand_identities.png" alt="04" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/brand_identities.png " alt="04 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/research_app.png" alt="05" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/research_app.png " alt="05 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/design_consultancy.png" alt="06" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/design_consultancy.png " alt="06 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="./performance">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/business_onapager.png" alt="07" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href="./performance ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/business_onapager.png " alt="07 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/seo_traffic.png" alt="08" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/seo_traffic.png " alt="08 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/research_app.png" alt="09" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/research_app.png " alt="09 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/restaurant.png" alt="10" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/restaurant.png " alt="10 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/brand_identities.png" alt="01" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/brand_identities.png " alt="01 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/7.png" alt="02" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/7.png " alt="02 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/seo_traffic.png" alt="03" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/seo_traffic.png " alt="03 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/2.png" alt="04" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/2.png " alt="04 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/5.png" alt="05" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/5.png " alt="05 " /></a>
                                         </li>
-                                        <li class="grid__item">
-                                            <a class="grid__link" href="">
-                                                <div class="layer"></div>
-                                                <div class="layer"></div>
-                                                <div class="layer"></div><img class="grid__img layer" src="img/Dribbble/6.png" alt="06" /></a>
+                                        <li class="grid__item ">
+                                            <a class="grid__link " href=" ">
+                                                <div class="layer "></div>
+                                                <div class="layer "></div>
+                                                <div class="layer "></div><img class="grid__img layer " src="img/Dribbble/6.png " alt="06 " /></a>
                                         </li>
                                     </ul>
                                 </div>
                             </section>
                         </div>
                     </div>
-                    <div class="h-75 ps-0 d-inline-block col-12 col-lg-10 col-xxl-6">
-                        <h1 class="display-3 lh-1 hero-text fw-bold text-position">Let your <span id="typed" class="color-main-blue"></span></h1>
-                        <h1 class="display-3 lh-1 hero-text fw-bold text-position">be heard in the</h1>
-                        <h1 class="display-3 lh-1 hero-text fw-bold text-position">digital world</h1>
+                    <div class="h-75 ps-0 d-inline-block col-12 col-lg-10 col-xxl-6 ">
+                        <h1 class="display-3 lh-1 hero-text fw-bold text-position ">Let your <span id="typed " class="color-main-blue "></span></h1>
+                        <h1 class="display-3 lh-1 hero-text fw-bold text-position ">be heard in the</h1>
+                        <h1 class="display-3 lh-1 hero-text fw-bold text-position ">digital world</h1>
                     </div>
                 </div>
             </div>
-            <div itemscope itemtype="https://schema.org/CreativeWork" class="row align-self-end hero-description hero-bg-mobile text-position click-through ">
-                <div class="col-12 col-sm-10 col-md-5 text-position click-through">
-                    <p class="lead text-position hero-bg">APS Wonder is a digital product design company committed to help businesses reach their audiences through top-notch digital experiences</p>
+            <div itemscope itemtype="https://schema.org/CreativeWork " class="row align-self-end hero-description hero-bg-mobile text-position click-through ">
+                <div class="col-12 col-sm-10 col-md-5 text-position click-through ">
+                    <p class="lead text-position hero-bg ">APS Wonder is a digital product design company committed to help businesses reach their audiences through top-notch digital experiences</p>
                 </div>
             </div>
         </div>
 
-        <div id="capabilities" class="container px-4 pb-5 pt-0 pt-sm-4">
-            <h2 class="fw-semi-bold text-position">Our capabilities</h2>
-            <div class="row g-4 pt-5 pb-lg-5 pb-4 row-cols-1">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-12 col-lg-5 order-lg-1 order-2 mt-4" data-aos="fade-up" data-aos-duration="1000">
-                        <h2 class="fw-bold color-main-blue mb-3">Digital strategy</h2>
+        <div id="capabilities " class="container px-4 pb-5 pt-0 pt-sm-4 ">
+            <h2 class="fw-semi-bold text-position ">Our capabilities</h2>
+            <div class="row g-4 pt-5 pb-lg-5 pb-4 row-cols-1 ">
+                <div class="row align-items-center justify-content-between ">
+                    <div class="col-12 col-lg-5 order-lg-1 order-2 mt-4 " data-aos="fade-up " data-aos-duration="1000 ">
+                        <h2 class="fw-bold color-main-blue mb-3 ">Digital strategy</h2>
                         <p>Improve your business with an in-depth research based strategy. We study the market, analyze competitors and most importantly your customers to help you improve engagement.</p>
                     </div>
-                    <div class="col-lg-6 col-sm-5 col-10 order-lg-2 order-1 mt-4 text-position" data-aos="fade-left" data-aos-duration="1500">
-                        <img src="img/capab1.jpg " width="100% " alt="photo" loading="lazy ">
+                    <div class="col-lg-6 col-sm-5 col-10 order-lg-2 order-1 mt-4 text-position " data-aos="fade-left " data-aos-duration="1500 ">
+                        <img src="img/capab1.jpg " width="100% " alt="photo " loading="lazy ">
                     </div>
                 </div>
             </div>
-            <div class="row g-4 pt-5 pb-lg-5 pb-4 row-cols-1">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-6 col-sm-5 col-10 mt-4 " data-aos="fade-right" data-aos-duration="1500">
-                        <img src="img/capab2.jpg " width="100% " alt="photo" loading="branding photo ">
+            <div class="row g-4 pt-5 pb-lg-5 pb-4 row-cols-1 ">
+                <div class="row align-items-center justify-content-between ">
+                    <div class="col-lg-6 col-sm-5 col-10 mt-4 " data-aos="fade-right " data-aos-duration="1500 ">
+                        <img src="img/capab2.jpg " width="100% " alt="photo " loading="branding photo ">
                     </div>
-                    <div class="col-12 col-lg-5  mt-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-12 col-lg-5 mt-4 " data-aos="fade-up " data-aos-duration="1000 ">
                         <h2 class="fw-bold color-main-blue mb-3 ">Branding</h2>
                         <p>Stand out from your competitors with a brand that resonates with your target audience. Branding is not only about the logo, but a unified identity that is aligned with your mission. We create a cohesive brand identity that spans
                             across all media and touchpoints.</p>
                     </div>
                 </div>
             </div>
-            <div class="row g-4 pt-5 pb-lg-5 pb-4 row-cols-1">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-5 col-12 order-lg-1 order-2 mt-4" data-aos="fade-up" data-aos-duration="1000">
-                        <h2 class="fw-bold color-main-blue mb-3">UX/UI design</h2>
+            <div class="row g-4 pt-5 pb-lg-5 pb-4 row-cols-1 ">
+                <div class="row align-items-center justify-content-between ">
+                    <div class="col-lg-5 col-12 order-lg-1 order-2 mt-4 " data-aos="fade-up " data-aos-duration="1000 ">
+                        <h2 class="fw-bold color-main-blue mb-3 ">UX/UI design</h2>
                         <p>User Experience and User Interface design is a great tool to support business growth & sales by improving the customer experience on your digital interfaces. We are here to get you started or move your company to the next level
                             in your jurney by creating easy-to-use digital products that embrace your brand’s identity.</p>
                     </div>
-                    <div class="col-lg-6 col-sm-5 col-10 order-lg-2 order-1 mt-4" data-aos="fade-left" data-aos-duration="1500">
-                        <img src="img/capab3.jpg " width="100% " alt="UX/UI design photo" loading="lazy ">
+                    <div class="col-lg-6 col-sm-5 col-10 order-lg-2 order-1 mt-4 " data-aos="fade-left " data-aos-duration="1500 ">
+                        <img src="img/capab3.jpg " width="100% " alt="UX/UI design photo " loading="lazy ">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid light-blue-bg">
-            <div id="services" class="container px-4 pt-5">
-                <h2 class="fw-semi-bold">Our services</h2>
-                <div class="row justify-content-between gy-4 px-4 py-5">
-                    <div class="col-lg-4 d-flex">
-                        <div class="col-lg-12 bg-white rounded-more px-4 py-4" data-aos="flip-up" data-aos-duration="1000">
-                            <div class="row mb-3 justify-content-center">
-                                <div class="col-6 my-auto d-flex justify-content-center">
-                                    <img src="img/service_icons/strategy_consulting_icon.svg" height="100% " width="" alt="strategy consulting icon " loading="lazy ">
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-11 text-center justify-content-center">
-                                    <h5 class="fw-bold color-main-blue">strategy consulting</h5>
-                                    <p class="color-main-grey mt-3">In the ever-changing market conditions, we analyze your market and competitors to help you thrive in your field.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="col-lg-12 bg-white rounded-more px-4 py-4" data-aos="flip-up" data-aos-duration="1000">
+        <div class="container-fluid light-blue-bg ">
+            <div id="services " class="container px-4 pt-5 ">
+                <h2 class="fw-semi-bold ">Our services</h2>
+                <div class="row justify-content-between gy-4 px-4 py-5 ">
+                    <div class="col-lg-4 d-flex ">
+                        <div class="col-lg-12 bg-white rounded-more px-4 py-4 " data-aos="flip-up " data-aos-duration="1000 ">
                             <div class="row mb-3 justify-content-center ">
                                 <div class="col-6 my-auto d-flex justify-content-center ">
-                                    <img src="img/service_icons/branding_icon.svg" height="100% " alt="branding icon " loading="lazy ">
+                                    <img src="img/service_icons/strategy_consulting_icon.svg " height="100% " width=" " alt="strategy consulting icon " loading="lazy ">
                                 </div>
                             </div>
                             <div class="row justify-content-center ">
                                 <div class="col-11 text-center justify-content-center ">
-                                    <h5 class="fw-bold color-main-blue">branding</h5>
-                                    <p class="color-main-grey mt-3">We create a unique brand that builds trust, recognition, loyalty, and reputation among your customers and differentiates you in the market.
+                                    <h5 class="fw-bold color-main-blue ">strategy consulting</h5>
+                                    <p class="color-main-grey mt-3 ">In the ever-changing market conditions, we analyze your market and competitors to help you thrive in your field.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex ">
+                        <div class="col-lg-12 bg-white rounded-more px-4 py-4 " data-aos="flip-up " data-aos-duration="1000 ">
+                            <div class="row mb-3 justify-content-center ">
+                                <div class="col-6 my-auto d-flex justify-content-center ">
+                                    <img src="img/service_icons/branding_icon.svg " height="100% " alt="branding icon " loading="lazy ">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center ">
+                                <div class="col-11 text-center justify-content-center ">
+                                    <h5 class="fw-bold color-main-blue ">branding</h5>
+                                    <p class="color-main-grey mt-3 ">We create a unique brand that builds trust, recognition, loyalty, and reputation among your customers and differentiates you in the market.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="col-lg-12 bg-white rounded-more px-4 py-4" data-aos="flip-up" data-aos-duration="1000">
-                            <div class="row mb-3 justify-content-center">
-                                <div class="col-6 my-auto d-flex justify-content-center">
-                                    <img src="img/service_icons/website_design_icon.svg" height="100% " alt="website design icon" loading="lazy ">
+                    <div class="col-lg-4 d-flex ">
+                        <div class="col-lg-12 bg-white rounded-more px-4 py-4 " data-aos="flip-up " data-aos-duration="1000 ">
+                            <div class="row mb-3 justify-content-center ">
+                                <div class="col-6 my-auto d-flex justify-content-center ">
+                                    <img src="img/service_icons/website_design_icon.svg " height="100% " alt="website design icon " loading="lazy ">
                                 </div>
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-11 text-center justify-content-center">
-                                    <h5 class="fw-bold color-main-blue">website design</h5>
-                                    <p class="color-main-grey mt-3">Based on UX principles, we create you an engaging website that is accessible for all users and easy to use on all devices. </p>
+                            <div class="row justify-content-center ">
+                                <div class="col-11 text-center justify-content-center ">
+                                    <h5 class="fw-bold color-main-blue ">website design</h5>
+                                    <p class="color-main-grey mt-3 ">Based on UX principles, we create you an engaging website that is accessible for all users and easy to use on all devices. </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 d-flex">
-                        <div class="col-lg-12 bg-white rounded-more px-4 py-4" data-aos="flip-up" data-aos-duration="1000">
-                            <div class="row mb-3 justify-content-center">
-                                <div class="col-6 my-auto d-flex justify-content-center">
-                                    <img src="img/service_icons/redesign_icon.svg" height="100% " width="" alt="redesign icon" loading="lazy ">
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-11 text-center justify-content-center">
-                                    <h5 class="fw-bold color-main-blue">redesign</h5>
-                                    <p class="color-main-grey mt-3">If your website needs improvement, we can help rebrand your site, increase your traffic and generate more leads.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="col-lg-12 bg-white rounded-more px-4 py-4" data-aos="flip-up" data-aos-duration="1000">
+                    <div class="col-lg-4 d-flex ">
+                        <div class="col-lg-12 bg-white rounded-more px-4 py-4 " data-aos="flip-up " data-aos-duration="1000 ">
                             <div class="row mb-3 justify-content-center ">
                                 <div class="col-6 my-auto d-flex justify-content-center ">
-                                    <img src="img/service_icons/seo_icon.svg" height="100% " alt="seo icon" loading="lazy ">
+                                    <img src="img/service_icons/redesign_icon.svg " height="100% " width=" " alt="redesign icon " loading="lazy ">
                                 </div>
                             </div>
                             <div class="row justify-content-center ">
                                 <div class="col-11 text-center justify-content-center ">
-                                    <h5 class="fw-bold color-main-blue">search engine optimization</h5>
-                                    <p class="color-main-grey mt-3">Through SEO, we help our customers reach a good ranking and a favourable placement to find your target audience and elevate your brand's profile.</p>
+                                    <h5 class="fw-bold color-main-blue ">redesign</h5>
+                                    <p class="color-main-grey mt-3 ">If your website needs improvement, we can help rebrand your site, increase your traffic and generate more leads.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="col-lg-12 bg-white rounded-more px-4 py-4" data-aos="flip-up" data-aos-duration="1000">
-                            <div class="row mb-3 justify-content-center">
-                                <div class="col-6 my-auto d-flex justify-content-center">
-                                    <img src="img/service_icons/copywriting_icon.svg" height="100% " alt="copywriting icon" loading="lazy ">
+                    <div class="col-lg-4 d-flex ">
+                        <div class="col-lg-12 bg-white rounded-more px-4 py-4 " data-aos="flip-up " data-aos-duration="1000 ">
+                            <div class="row mb-3 justify-content-center ">
+                                <div class="col-6 my-auto d-flex justify-content-center ">
+                                    <img src="img/service_icons/seo_icon.svg " height="100% " alt="seo icon " loading="lazy ">
                                 </div>
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-11 text-center justify-content-center">
-                                    <h5 class="fw-bold color-main-blue">copywriting</h5>
-                                    <p class="color-main-grey mt-3">We write captivating content that converts your visitors into customers and ranks higher on Google result pages. </p>
+                            <div class="row justify-content-center ">
+                                <div class="col-11 text-center justify-content-center ">
+                                    <h5 class="fw-bold color-main-blue ">search engine optimization</h5>
+                                    <p class="color-main-grey mt-3 ">Through SEO, we help our customers reach a good ranking and a favourable placement to find your target audience and elevate your brand's profile.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex ">
+                        <div class="col-lg-12 bg-white rounded-more px-4 py-4 " data-aos="flip-up " data-aos-duration="1000 ">
+                            <div class="row mb-3 justify-content-center ">
+                                <div class="col-6 my-auto d-flex justify-content-center ">
+                                    <img src="img/service_icons/copywriting_icon.svg " height="100% " alt="copywriting icon " loading="lazy ">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center ">
+                                <div class="col-11 text-center justify-content-center ">
+                                    <h5 class="fw-bold color-main-blue ">copywriting</h5>
+                                    <p class="color-main-grey mt-3 ">We write captivating content that converts your visitors into customers and ranks higher on Google result pages. </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 d-flex">
-                        <div class="col-lg-12 bg-white rounded-more px-4 py-4" data-aos="flip-up" data-aos-duration="1000">
-                            <div class="row mb-3 justify-content-center">
-                                <div class="col-6 my-auto d-flex justify-content-center">
-                                    <img src="img/service_icons/development_icon.svg" height="100% " width="" alt="development icon" loading="lazy ">
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-11 text-center justify-content-center">
-                                    <h5 class="fw-bold color-main-blue">development</h5>
-                                    <p class="color-main-grey mt-3">By using WordPress, we create a flexible and powerful platform that is easy to host and manage.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="col-lg-12 bg-white rounded-more px-4 py-4" data-aos="flip-up" data-aos-duration="1000">
+                    <div class="col-lg-4 d-flex ">
+                        <div class="col-lg-12 bg-white rounded-more px-4 py-4 " data-aos="flip-up " data-aos-duration="1000 ">
                             <div class="row mb-3 justify-content-center ">
                                 <div class="col-6 my-auto d-flex justify-content-center ">
-                                    <img src="img/service_icons/support_icon.svg" height="100% " alt="support icon" loading="lazy ">
+                                    <img src="img/service_icons/development_icon.svg " height="100% " width=" " alt="development icon " loading="lazy ">
                                 </div>
                             </div>
                             <div class="row justify-content-center ">
                                 <div class="col-11 text-center justify-content-center ">
-                                    <h5 class="fw-bold color-main-blue">support</h5>
-                                    <p class="color-main-grey mt-3">Releasing your website is only the beginning. On completion of our training with us, you will be a master on how CMS works.</p>
+                                    <h5 class="fw-bold color-main-blue ">development</h5>
+                                    <p class="color-main-grey mt-3 ">By using WordPress, we create a flexible and powerful platform that is easy to host and manage.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="col-lg-12 bg-white rounded-more px-4 py-4" data-aos="flip-up" data-aos-duration="1000">
-                            <div class="row mb-3 justify-content-center">
+                    <div class="col-lg-4 d-flex ">
+                        <div class="col-lg-12 bg-white rounded-more px-4 py-4 " data-aos="flip-up " data-aos-duration="1000 ">
+                            <div class="row mb-3 justify-content-center ">
                                 <div class="col-6 my-auto d-flex justify-content-center ">
-                                    <img src="img/service_icons/advertisment.svg" height="100% " alt="Google ad icon" loading="lazy ">
+                                    <img src="img/service_icons/support_icon.svg " height="100% " alt="support icon " loading="lazy ">
                                 </div>
                             </div>
-                            <div class="row justify-content-center">
-                                <div class="col-11 text-center justify-content-center">
-                                    <h5 class="fw-bold color-main-blue">Google Ad</h5>
-                                    <p class="color-main-grey mt-3">We help drive qualified traffic and good-fit customers to your business while they are searching for products online. </p>
+                            <div class="row justify-content-center ">
+                                <div class="col-11 text-center justify-content-center ">
+                                    <h5 class="fw-bold color-main-blue ">support</h5>
+                                    <p class="color-main-grey mt-3 ">Releasing your website is only the beginning. On completion of our training with us, you will be a master on how CMS works.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex ">
+                        <div class="col-lg-12 bg-white rounded-more px-4 py-4 " data-aos="flip-up " data-aos-duration="1000 ">
+                            <div class="row mb-3 justify-content-center ">
+                                <div class="col-6 my-auto d-flex justify-content-center ">
+                                    <img src="img/service_icons/advertisment.svg " height="100% " alt="Google ad icon " loading="lazy ">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center ">
+                                <div class="col-11 text-center justify-content-center ">
+                                    <h5 class="fw-bold color-main-blue ">Google Ad</h5>
+                                    <p class="color-main-grey mt-3 ">We help drive qualified traffic and good-fit customers to your business while they are searching for products online. </p>
                                 </div>
                             </div>
                         </div>
@@ -464,51 +477,51 @@
             </div>
         </div>
 
-        <img class="triangle" src="img/triangle.svg" alt="triangle ">
-        <div class="container px-4 py-5">
-            <h2 class="fw-semi-bold">Our approach is</h2>
-            <div class="row justify-content-between g-4 px-4 py-5">
-                <div class="col-lg-4">
-                    <div class="container-fluid px-4 py-5 bg-white rounded-more shadow" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-6 my-auto d-flex justify-content-center">
-                                <img src="img/human_centered_icon.svg" height="100% " width="" alt="human centered icon " loading="lazy ">
+        <img class="triangle " src="img/triangle.svg " alt="triangle ">
+        <div class="container px-4 py-5 ">
+            <h2 class="fw-semi-bold ">Our approach is</h2>
+            <div class="row justify-content-between g-4 px-4 py-5 ">
+                <div class="col-lg-4 ">
+                    <div class="container-fluid px-4 py-5 bg-white rounded-more shadow " data-aos="zoom-in-up " data-aos-duration="1000 ">
+                        <div class="row mb-3 justify-content-center ">
+                            <div class="col-6 my-auto d-flex justify-content-center ">
+                                <img src="img/human_centered_icon.svg " height="100% " width=" " alt="human centered icon " loading="lazy ">
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-11 text-center justify-content-center">
+                        <div class="row justify-content-center ">
+                            <div class="col-11 text-center justify-content-center ">
                                 <h5 class="fw-bold ">human centered</h5>
-                                <p class="color-main-grey mt-3">Innovation starts with people. By applying behavioral science and customer research, we design engaging digital products.</p>
+                                <p class="color-main-grey mt-3 ">Innovation starts with people. By applying behavioral science and customer research, we design engaging digital products.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="container-fluid px-4 py-5 bg-white rounded-more shadow" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="col-lg-4 ">
+                    <div class="container-fluid px-4 py-5 bg-white rounded-more shadow " data-aos="zoom-in-up " data-aos-duration="1000 " data-aos-delay="300 ">
                         <div class="row mb-3 justify-content-center ">
                             <div class="col-6 my-auto d-flex justify-content-center ">
-                                <img src="img/goal_oriented_icon.svg" height="100% " alt="goal oriented icon" loading="lazy ">
+                                <img src="img/goal_oriented_icon.svg " height="100% " alt="goal oriented icon " loading="lazy ">
                             </div>
                         </div>
                         <div class="row justify-content-center ">
                             <div class="col-11 text-center justify-content-center ">
                                 <h5 class="fw-bold ">goal oriented</h5>
-                                <p class="color-main-grey mt-3">The key to success is collaboration. We believe in managing the project together with our client while keeping the goals in front of us.</p>
+                                <p class="color-main-grey mt-3 ">The key to success is collaboration. We believe in managing the project together with our client while keeping the goals in front of us.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="container-fluid px-4 py-5 bg-white rounded-more shadow" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600">
-                        <div class="row mb-3 justify-content-center">
-                            <div class="col-6 my-auto d-flex justify-content-center">
-                                <img src="img/future_proof_icon.svg" height="100% " alt="future proof icon" loading="lazy ">
+                <div class="col-lg-4 ">
+                    <div class="container-fluid px-4 py-5 bg-white rounded-more shadow " data-aos="zoom-in-up " data-aos-duration="1000 " data-aos-delay="600 ">
+                        <div class="row mb-3 justify-content-center ">
+                            <div class="col-6 my-auto d-flex justify-content-center ">
+                                <img src="img/future_proof_icon.svg " height="100% " alt="future proof icon " loading="lazy ">
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-11 text-center justify-content-center">
+                        <div class="row justify-content-center ">
+                            <div class="col-11 text-center justify-content-center ">
                                 <h5 class="fw-bold ">future-proof</h5>
-                                <p class="color-main-grey mt-3">Design trends come and go, however simple-to-use digital products based on research & user testing will make you unique.</p>
+                                <p class="color-main-grey mt-3 ">Design trends come and go, however simple-to-use digital products based on research & user testing will make you unique.</p>
                             </div>
                         </div>
                     </div>
@@ -516,37 +529,37 @@
             </div>
         </div>
 
-        <div id="usecases" class="container px-4 py-5">
-            <h2 class="fw-semi-bold">Usecases</h2>
+        <div id="usecases " class="container px-4 py-5 ">
+            <h2 class="fw-semi-bold ">Usecases</h2>
             <!--<p>We offer affordable packages tailored for small, medium and large companies.
                 </br>If you have a project in mind, contact us and we create a proposal based on your budget and business needs.
             </p> -->
-            <div class="row justify-content-between g-4 px-4 py-5">
-                <div class="col-lg-4">
-                    <div class="container-fluid bg-white px-0 rounded-more shadow" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <img src="img/usecase1.png" width="100% " alt="use_case_img " loading="lazy ">
-                        <div class="row justify-content-center px-4 py-4">
-                            <div class="col-11 justify-content-center">
+            <div class="row justify-content-between g-4 px-4 py-5 ">
+                <div class="col-lg-4 ">
+                    <div class="container-fluid bg-white px-0 rounded-more shadow " data-aos="zoom-in-up " data-aos-duration="1000 ">
+                        <img src="img/usecase1.png " width="100% " alt="use_case_img " loading="lazy ">
+                        <div class="row justify-content-center px-4 py-4 ">
+                            <div class="col-11 justify-content-center ">
                                 <h5 class="fw-bold ">How we boost your website and attract new customers</h5>
-                                <p class="color-main-grey mt-3">Get to know how we enhance performance and create a website that compete effectively in the online marketplace.</p>
-                                <a class="remove-hash" href="./performance">
-                                    <h5 class="color-main-blue mt-4">
-                                        </i>LEARN MORE&nbsp;<i class="icon-left rotate-180"></i>
+                                <p class="color-main-grey mt-3 ">Get to know how we enhance performance and create a website that compete effectively in the online marketplace.</p>
+                                <a class="remove-hash " href="./performance ">
+                                    <h5 class="color-main-blue mt-4 ">
+                                        </i>LEARN MORE&nbsp;<i class="icon-left rotate-180 "></i>
                                     </h5>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="container-fluid bg-white px-0 rounded-more shadow" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <img src="img/usecase_seo.png" width="100% " alt="search enginge optimization usecase UI " loading="lazy ">
-                        <div class="row justify-content-center px-4 py-4">
-                            <div class="col-11 justify-content-center">
+                <div class="col-lg-4 ">
+                    <div class="container-fluid bg-white px-0 rounded-more shadow " data-aos="zoom-in-up " data-aos-duration="1000 ">
+                        <img src="img/usecase_seo.png " width="100% " alt="search enginge optimization usecase UI " loading="lazy ">
+                        <div class="row justify-content-center px-4 py-4 ">
+                            <div class="col-11 justify-content-center ">
                                 <h5 class="fw-bold ">Skyrocket your traffic with search engine optimization</h5>
-                                <p class="color-main-grey mt-3">With the help of search engine optimization we can improve your online visibility and guide potential customers to find your website.</p>
-                                <a class="remove-hash" href="./performance">
-                                    <h5 class="color-main-sec-dark mt-4">
+                                <p class="color-main-grey mt-3 ">With the help of search engine optimization we can improve your online visibility and guide potential customers to find your website.</p>
+                                <a class="remove-hash " href="./performance ">
+                                    <h5 class="color-main-sec-dark mt-4 ">
                                         </i>COMING SOON</i>
                                     </h5>
                                 </a>
@@ -554,15 +567,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="container-fluid bg-white px-0 rounded-more shadow" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <img src="img/usecase_research.png" width="100% " alt="UX research usecase UI" loading="lazy ">
-                        <div class="row justify-content-center px-4 py-4">
-                            <div class="col-11 justify-content-center">
+                <div class="col-lg-4 ">
+                    <div class="container-fluid bg-white px-0 rounded-more shadow " data-aos="zoom-in-up " data-aos-duration="1000 ">
+                        <img src="img/usecase_research.png " width="100% " alt="UX research usecase UI " loading="lazy ">
+                        <div class="row justify-content-center px-4 py-4 ">
+                            <div class="col-11 justify-content-center ">
                                 <h5 class="fw-bold ">How research can improve your product</h5>
-                                <p class="color-main-grey mt-3">By gathering insights from research and collaborating with users we can successfully build products that are based on their needs. </p>
-                                <a class="remove-hash" href="./performance">
-                                    <h5 class="color-main-sec-dark mt-4">
+                                <p class="color-main-grey mt-3 ">By gathering insights from research and collaborating with users we can successfully build products that are based on their needs. </p>
+                                <a class="remove-hash " href="./performance ">
+                                    <h5 class="color-main-sec-dark mt-4 ">
                                         </i>COMING SOON</i>
                                     </h5>
                                 </a>
@@ -573,140 +586,140 @@
             </div>
         </div>
 
-        <div id="packages" class="container px-4 pt-5 mb-n5">
-            <h2 class="fw-semi-bold">Packages</h2>
+        <div id="packages " class="container px-4 pt-5 mb-n5 ">
+            <h2 class="fw-semi-bold ">Packages</h2>
             <p>We offer affordable packages tailored for small, medium and large companies.
                 </br>If you have a project in mind, contact us and we create a proposal based on your budget and business needs.
             </p>
-            <div class="swiper mySwiper py-5">
-                <div class="swiper-wrapper">
-                    <div style="height: auto;" class="swiper-slide bg-transparent" data-aos="zoom-in-up" data-aos-duration="1000">
-                        <div class="col rounded-more h-100">
-                            <div class="card rounded-more h-100">
-                                <div class="card-body">
-                                    <div class="row mb-3 justify-content-center">
-                                        <div class="col-3 my-auto d-flex justify-content-center">
-                                            <img src="img/basic_package.svg" height="100% " alt="performance package icon" loading="lazy ">
+            <div class="swiper mySwiper py-5 ">
+                <div class="swiper-wrapper ">
+                    <div style="height: auto; " class="swiper-slide bg-transparent " data-aos="zoom-in-up " data-aos-duration="1000 ">
+                        <div class="col rounded-more h-100 ">
+                            <div class="card rounded-more h-100 ">
+                                <div class="card-body ">
+                                    <div class="row mb-3 justify-content-center ">
+                                        <div class="col-3 my-auto d-flex justify-content-center ">
+                                            <img src="img/basic_package.svg " height="100% " alt="performance package icon " loading="lazy ">
                                         </div>
                                     </div>
-                                    <div class="row justify-content-center">
-                                        <div class="col-11 text-center justify-content-center">
-                                            <h5 class="fw-bold color-main-blue">Performance</h5>
-                                            <p class="color-main-grey pb-4 border-bottom">We boost your website with SEO tools to reach more customers </p>
+                                    <div class="row justify-content-center ">
+                                        <div class="col-11 text-center justify-content-center ">
+                                            <h5 class="fw-bold color-main-blue ">Performance</h5>
+                                            <p class="color-main-grey pb-4 border-bottom ">We boost your website with SEO tools to reach more customers </p>
                                         </div>
-                                        <div class="col-11 text-start">
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Technical improvement</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;On-page optimization</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Keyword research</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Google Business Profile</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Website audit</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Google Analytics</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Google Ads</p>
+                                        <div class="col-11 text-start ">
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Technical improvement</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;On-page optimization</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Keyword research</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Google Business Profile</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Website audit</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Google Analytics</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Google Ads</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card-header rounded-bottom-more py-3 text-white bg-primary border-primary">
-                                    <P class="my-0 fw-semi-bold">from € 600 </p>
+                                <div class="card-header rounded-bottom-more py-3 text-white bg-primary border-primary ">
+                                    <P class="my-0 fw-semi-bold ">from € 600 </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div style="height: auto;" class="swiper-slide bg-transparent" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
-                        <div class="col rounded-more h-100">
-                            <div class="card rounded-more h-100">
-                                <div class="card-body">
-                                    <div class="row mb-3 justify-content-center">
-                                        <div class="col-3 my-auto d-flex justify-content-center">
-                                            <img src="img/business_package.svg" height="100% " alt="redesign package icon" loading="lazy ">
+                    <div style="height: auto; " class="swiper-slide bg-transparent " data-aos="zoom-in-up " data-aos-duration="1000 " data-aos-delay="300 ">
+                        <div class="col rounded-more h-100 ">
+                            <div class="card rounded-more h-100 ">
+                                <div class="card-body ">
+                                    <div class="row mb-3 justify-content-center ">
+                                        <div class="col-3 my-auto d-flex justify-content-center ">
+                                            <img src="img/business_package.svg " height="100% " alt="redesign package icon " loading="lazy ">
                                         </div>
                                     </div>
-                                    <div class="row justify-content-center">
-                                        <div class="col-11 text-center justify-content-center">
-                                            <h5 class="fw-bold color-main-blue">Redesign</h5>
-                                            <p class="color-main-grey pb-4 border-bottom">We rebrand your website and improve engagement</p>
+                                    <div class="row justify-content-center ">
+                                        <div class="col-11 text-center justify-content-center ">
+                                            <h5 class="fw-bold color-main-blue ">Redesign</h5>
+                                            <p class="color-main-grey pb-4 border-bottom ">We rebrand your website and improve engagement</p>
                                         </div>
-                                        <div class="col-11 text-start">
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Website audit</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Unique layout</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;User friendly design</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Images, illustrations</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Social media strategy</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Search engine optimization</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Mobile optimization</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Development</p>
+                                        <div class="col-11 text-start ">
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Website audit</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Unique layout</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;User friendly design</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Images, illustrations</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Social media strategy</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Search engine optimization</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Mobile optimization</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Development</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card-header rounded-bottom-more py-3 text-white bg-primary border-primary">
-                                    <P class="my-0 fw-semi-bold">from € 1 000</p>
+                                <div class="card-header rounded-bottom-more py-3 text-white bg-primary border-primary ">
+                                    <P class="my-0 fw-semi-bold ">from € 1 000</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div style="height: auto;" class="swiper-slide bg-transparent" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600">
-                        <div class="col rounded-more h-100">
-                            <div class="card rounded-more h-100">
-                                <div class="card-body">
-                                    <div class="row mb-3 justify-content-center">
-                                        <div class="col-3 my-auto d-flex justify-content-center">
-                                            <img src="img/individual_package.svg" height="100% " alt="complex package icon" loading="lazy ">
+                    <div style="height: auto; " class="swiper-slide bg-transparent " data-aos="zoom-in-up " data-aos-duration="1000 " data-aos-delay="600 ">
+                        <div class="col rounded-more h-100 ">
+                            <div class="card rounded-more h-100 ">
+                                <div class="card-body ">
+                                    <div class="row mb-3 justify-content-center ">
+                                        <div class="col-3 my-auto d-flex justify-content-center ">
+                                            <img src="img/individual_package.svg " height="100% " alt="complex package icon " loading="lazy ">
                                         </div>
                                     </div>
-                                    <div class="row justify-content-center">
-                                        <div class="col-11 text-center justify-content-center">
-                                            <h5 class="fw-bold color-main-blue">Complex</h5>
-                                            <p class="color-main-grey pb-4 border-bottom">We create a research-based, fully branded, attractive website</p>
+                                    <div class="row justify-content-center ">
+                                        <div class="col-11 text-center justify-content-center ">
+                                            <h5 class="fw-bold color-main-blue ">Complex</h5>
+                                            <p class="color-main-grey pb-4 border-bottom ">We create a research-based, fully branded, attractive website</p>
                                         </div>
-                                        <div class="col-11 text-start">
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Research</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Branding</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;UX/UI design</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Images, illustrations</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Unique iconography</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Social media strategy</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Search engine optimization</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Development</p>
-                                            <p class="mb-3"><i class="icon-ok-circle pr-4"></i>&nbsp;&nbsp;Website management training</p>
+                                        <div class="col-11 text-start ">
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Research</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Branding</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;UX/UI design</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Images, illustrations</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Unique iconography</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Social media strategy</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Search engine optimization</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Development</p>
+                                            <p class="mb-3 "><i class="icon-ok-circle pr-4 "></i>&nbsp;&nbsp;Website management training</p>
 
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="card-header rounded-bottom-more py-3 text-white bg-primary border-primary">
-                                    <P class="my-0 fw-semi-bold">from € 1800</p>
+                                <div class="card-header rounded-bottom-more py-3 text-white bg-primary border-primary ">
+                                    <P class="my-0 fw-semi-bold ">from € 1800</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 swiper-pagination"></div>
+                <div class="mt-5 swiper-pagination "></div>
             </div>
         </div>
 
 
-        <div class="light-blue-bg container rounded-more px-4 pt-5 mt-n10 mb-5">
+        <div class="light-blue-bg container rounded-more px-4 pt-5 mt-n10 mb-5 ">
             <br><br><br>
-            <h4 class="fw-bold pt-5">Additional services</h4>
-            <div class="row justify-content-between g-4 px-4 pb-5 mt-1">
-                <div class="col-lg-6">
-                    <div class="container-fluid rounded-more bg-white px-4 pt-3" data-aos="zoom-in" data-aos-duration="1000">
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center justify-content-center py-3">
+            <h4 class="fw-bold pt-5 ">Additional services</h4>
+            <div class="row justify-content-between g-4 px-4 pb-5 mt-1 ">
+                <div class="col-lg-6 ">
+                    <div class="container-fluid rounded-more bg-white px-4 pt-3 " data-aos="zoom-in " data-aos-duration="1000 ">
+                        <div class="row justify-content-center ">
+                            <div class="col-12 text-center justify-content-center py-3 ">
                                 <h5 class="fw-bold ">Brand strategy</h5>
-                                <h5 class="fw-bold color-main-blue my-2">from € 650</h5>
+                                <h5 class="fw-bold color-main-blue my-2 ">from € 650</h5>
                                 <p class="color-main-grey ">In-depth research with market analysis, competitor and customer research</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="container-fluid rounded-more bg-white px-4 pt-3" data-aos="zoom-in" data-aos-duration="1000">
-                        <div class="row justify-content-center">
-                            <div class="col-12 text-center justify-content-center py-3">
+                <div class="col-lg-6 ">
+                    <div class="container-fluid rounded-more bg-white px-4 pt-3 " data-aos="zoom-in " data-aos-duration="1000 ">
+                        <div class="row justify-content-center ">
+                            <div class="col-12 text-center justify-content-center py-3 ">
                                 <h5 class="fw-bold ">Company branding</h5>
-                                <h5 class="fw-bold color-main-blue my-2">from € 650</h5>
+                                <h5 class="fw-bold color-main-blue my-2 ">from € 650</h5>
                                 <p class="color-main-grey ">Unique branding for you company from logo to complex brand identities.</p>
                             </div>
                         </div>
@@ -716,131 +729,131 @@
             </div>
         </div>
 
-        <div id="vision" class="container px-4 pt-5 mt-5">
-            <h2 class="fw-semi-bold mb-5">Choose our company if you want a website</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-1 pt-2 me-lg-3" data-aos="fade-up" data-aos-duration="1000">
-                    <h5 class="fw-bold display-3 color-main-blue-20">01</h5>
+        <div id="vision " class="container px-4 pt-5 mt-5 ">
+            <h2 class="fw-semi-bold mb-5 ">Choose our company if you want a website</h2>
+            <div class="row justify-content-center ">
+                <div class="col-lg-1 pt-2 me-lg-3 " data-aos="fade-up " data-aos-duration="1000 ">
+                    <h5 class="fw-bold display-3 color-main-blue-20 ">01</h5>
                 </div>
-                <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <h5 class="fw-bold color-main-blue">affordable for your small or medium business</h5>
-                    <p class="color-main-grey mt-3">Since we are a small business too, we are familiar with the struggles and obstacles of starting and managing one. Therefore while calculating our prices, we had those smaller businesses in mind who have a tighter budget yet aspire
+                <div class="col-lg-7 " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="300 ">
+                    <h5 class="fw-bold color-main-blue ">affordable for your small or medium business</h5>
+                    <p class="color-main-grey mt-3 ">Since we are a small business too, we are familiar with the struggles and obstacles of starting and managing one. Therefore while calculating our prices, we had those smaller businesses in mind who have a tighter budget yet aspire
                         to stand out from their competitors with a beautiful website.</p>
                 </div>
-                <hr class="w-100 my-3 border-1 border-top border-color-main-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <div class="col-lg-1 pt-2 mt-3 me-lg-3" data-aos="fade-up" data-aos-duration="1000">
-                    <h5 class="fw-bold display-3 color-main-blue-20">02</h5>
+                <hr class="w-100 my-3 border-1 border-top border-color-main-grey " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="300 ">
+                <div class="col-lg-1 pt-2 mt-3 me-lg-3 " data-aos="fade-up " data-aos-duration="1000 ">
+                    <h5 class="fw-bold display-3 color-main-blue-20 ">02</h5>
                 </div>
-                <div class="col-lg-7 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <h5 class="fw-bold color-main-blue">with short delivery time</h5>
-                    <p class="color-main-grey mt-3">In the world of globalized market. Also time is a crucial factor, that’s why we offer short delivery time for your business while keeping our high quality standards.</p>
+                <div class="col-lg-7 mt-3 " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="300 ">
+                    <h5 class="fw-bold color-main-blue ">with short delivery time</h5>
+                    <p class="color-main-grey mt-3 ">In the world of globalized market. Also time is a crucial factor, that’s why we offer short delivery time for your business while keeping our high quality standards.</p>
                 </div>
-                <hr class="w-100 my-3 border-1 border-top border-color-main-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <div class="col-lg-1 pt-2 mt-3 me-lg-3" data-aos="fade-up" data-aos-duration="1000">
-                    <h5 class="fw-bold display-3 color-main-blue-20">03</h5>
+                <hr class="w-100 my-3 border-1 border-top border-color-main-grey " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="300 ">
+                <div class="col-lg-1 pt-2 mt-3 me-lg-3 " data-aos="fade-up " data-aos-duration="1000 ">
+                    <h5 class="fw-bold display-3 color-main-blue-20 ">03</h5>
                 </div>
-                <div class="col-lg-7 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <h5 class="fw-bold color-main-blue">that attracts customers with its beautiful, simple-to-use layout</h5>
-                    <p class="color-main-grey mt-3">Accessibility is important for your SEO, as well as for the customers who expect state-of-the-art websites that are optimized for all devices and easy to navigate. Leave no customer behind with us, as we are creating user-centric websites.</p>
+                <div class="col-lg-7 mt-3 " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="300 ">
+                    <h5 class="fw-bold color-main-blue ">that attracts customers with its beautiful, simple-to-use layout</h5>
+                    <p class="color-main-grey mt-3 ">Accessibility is important for your SEO, as well as for the customers who expect state-of-the-art websites that are optimized for all devices and easy to navigate. Leave no customer behind with us, as we are creating user-centric websites.</p>
                 </div>
-                <hr class="w-100 my-3 border-1 border-top border-color-main-grey" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                <div class="col-lg-1 pt-2 mt-3 me-lg-3" data-aos="fade-up" data-aos-duration="1000">
-                    <h5 class="fw-bold display-3 color-main-blue-20">04</h5>
+                <hr class="w-100 my-3 border-1 border-top border-color-main-grey " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="300 ">
+                <div class="col-lg-1 pt-2 mt-3 me-lg-3 " data-aos="fade-up " data-aos-duration="1000 ">
+                    <h5 class="fw-bold display-3 color-main-blue-20 ">04</h5>
                 </div>
-                <div class="col-lg-7 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <h5 class="fw-bold color-main-blue">that engage customers and has a positive impact on your conversion rates</h5>
-                    <p class="color-main-grey mt-3">Users often leave web pages within 10–20 seconds, however websites with a clear value proposition can hold people's attention for much longer. We help communicate your strengths and guide users to perform actions on your site.</p>
+                <div class="col-lg-7 mt-3 " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="300 ">
+                    <h5 class="fw-bold color-main-blue ">that engage customers and has a positive impact on your conversion rates</h5>
+                    <p class="color-main-grey mt-3 ">Users often leave web pages within 10–20 seconds, however websites with a clear value proposition can hold people's attention for much longer. We help communicate your strengths and guide users to perform actions on your site.</p>
                 </div>
 
             </div>
         </div>
 
-        <div id="contact" class="container px-4 pt-5 mt-5">
-            <h2 class="fw-semi-bold">Let’s talk about your vision</h2>
-            <div class="row my-3">
-                <div class="col-lg-7">
+        <div id="contact " class="container px-4 pt-5 mt-5 ">
+            <h2 class="fw-semi-bold ">Let’s talk about your vision</h2>
+            <div class="row my-3 ">
+                <div class="col-lg-7 ">
                     <p>Share your current needs and goals via our contact form or write to
-                        <a class="fw-bold" href="mailto: info@apswonder.com"><u>info@apswonder.com.</u></a>
+                        <a class="fw-bold " href="mailto: info@apswonder.com "><u>info@apswonder.com.</u></a>
                         <br>We will be in touch with you shortly to discuss your idea further, and to come up with a custom solution for you!</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mb-md-0 mb-5 pt-5 pe-lg-5 pe-0">
-                    <form name="contact" method="POST" data-netlify="true" class="row g-3">
-                        <div class="col-lg-6 mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" name="name" id="name" required="">
+            <div class="row ">
+                <div class="col-lg-8 mb-md-0 mb-5 pt-5 pe-lg-5 pe-0 ">
+                    <form name="contact " method="POST " data-netlify="true " class="row g-3 ">
+                        <div class="col-lg-6 mb-3 ">
+                            <label for="name " class="form-label ">Name</label>
+                            <input type="text " class="form-control " name="name " id="name " required=" ">
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="companyName" class="form-label">Company name</label>
-                            <input type="text" class="form-control" id="companyName">
+                        <div class="col-md-6 mb-3 ">
+                            <label for="companyName " class="form-label ">Company name</label>
+                            <input type="text " class="form-control " id="companyName ">
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="emailInfo" class="form-label">E-mail address</label>
-                            <input type="email" name="email" class="form-control" id="emailInfo" required="">
+                        <div class="col-md-6 mb-3 ">
+                            <label for="emailInfo " class="form-label ">E-mail address</label>
+                            <input type="email " name="email " class="form-control " id="emailInfo " required=" ">
                         </div>
-                        <div class="col-md-12 mb-3">
-                            <label for="message" class="form-label">How can we help?</label>
-                            <textarea class="form-control" id="message" name="message" rows="9" required="" style="resize: none;"></textarea>
+                        <div class="col-md-12 mb-3 ">
+                            <label for="message " class="form-label ">How can we help?</label>
+                            <textarea class="form-control " id="message " name="message " rows="9 " required=" " style="resize: none; "></textarea>
                         </div>
-                        <div class="col-md-12">
-                            <button type="submit" class="px-4 py-2 button fw-semi-bold">Contact us</button>
+                        <div class="col-md-12 ">
+                            <button type="submit " class="px-4 py-2 button fw-semi-bold ">Contact us</button>
                         </div>
-                        <img class="cube" src="img/cube.svg" alt="cube ">
+                        <img class="cube " src="img/cube.svg " alt="cube ">
                     </form>
                 </div>
 
 
-                <div class="col-lg-4 shadow bg-white rounded-more my-5 py-4 pe-5" style="height: fit-content;" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-                    <div class="row justify-content-center my-3">
-                        <div class="col-12 text-center justify-content-center">
-                            <h5 class="fw-bold color-main-blue">What happens next?</h5>
+                <div class="col-lg-4 shadow bg-white rounded-more my-5 py-4 pe-5 " style="height: fit-content; " data-aos="fade-left " data-aos-duration="1000 " data-aos-delay="300 ">
+                    <div class="row justify-content-center my-3 ">
+                        <div class="col-12 text-center justify-content-center ">
+                            <h5 class="fw-bold color-main-blue ">What happens next?</h5>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-4 d-flex align-items-center justify-content-center">
-                            <img class="step-icon" src="img/step1.svg" alt="1. " loading="lazy">
+                    <div class="row ">
+                        <div class="col-4 d-flex align-items-center justify-content-center ">
+                            <img class="step-icon " src="img/step1.svg " alt="1. " loading="lazy ">
                         </div>
-                        <div class="col-8 d-flex align-items-center">
-                            <p class="fw-bold">Online call</p>
+                        <div class="col-8 d-flex align-items-center ">
+                            <p class="fw-bold ">Online call</p>
                         </div>
                     </div>
-                    <div class="row mt-n3">
-                        <div class="col-4 d-flex justify-content-center">
-                            <div class="vertical-dotted-line"></div>
+                    <div class="row mt-n3 ">
+                        <div class="col-4 d-flex justify-content-center ">
+                            <div class="vertical-dotted-line "></div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-8 ">
                             <p class="color-main-grey ">We arrange an online meeting to discuss your needs and goals in detail.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-4 d-flex align-items-center justify-content-center">
-                            <img class="step-icon" src="img/step2.svg" alt="2. " loading="lazy">
+                    <div class="row ">
+                        <div class="col-4 d-flex align-items-center justify-content-center ">
+                            <img class="step-icon " src="img/step2.svg " alt="2. " loading="lazy ">
                         </div>
-                        <div class="col-8 d-flex align-items-center">
-                            <p class="fw-bold">Proposal</p>
+                        <div class="col-8 d-flex align-items-center ">
+                            <p class="fw-bold ">Proposal</p>
                         </div>
                     </div>
-                    <div class="row mt-n3">
-                        <div class="col-4 d-flex justify-content-center">
-                            <div class="vertical-dotted-line"></div>
+                    <div class="row mt-n3 ">
+                        <div class="col-4 d-flex justify-content-center ">
+                            <div class="vertical-dotted-line "></div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-8 ">
                             <p class="color-main-grey ">We create a proposal including a budget estimate and a timeline. </p>
                         </div>
                     </div>
-                    <div class="row mb-2">
-                        <div class="col-4 d-flex align-items-center justify-content-center">
-                            <img class="step-icon" src="img/step3.svg" alt="3. " loading="lazy">
+                    <div class="row mb-2 ">
+                        <div class="col-4 d-flex align-items-center justify-content-center ">
+                            <img class="step-icon " src="img/step3.svg " alt="3. " loading="lazy ">
                         </div>
-                        <div class="col-8 d-flex align-items-center">
-                            <p class="fw-bold">Collaboration</p>
+                        <div class="col-8 d-flex align-items-center ">
+                            <p class="fw-bold ">Collaboration</p>
                         </div>
                     </div>
-                    <div class="row mt-n3">
-                        <div class="col-4">
+                    <div class="row mt-n3 ">
+                        <div class="col-4 ">
                         </div>
-                        <div class="col-8">
+                        <div class="col-8 ">
                             <p class="color-main-grey ">After agreeing on the terms and conditions, we are ready to start working together.</p>
                         </div>
                     </div>
@@ -848,23 +861,23 @@
             </div>
         </div>
 
-        <div class="container-fluid dark-blue-bg">
-            <div id="faq" class="container px-4 pb-5">
-                <div class="row pb-4">
-                    <div class="col d-flex justify-content-center">
-                        <h4 class="fw-semi-bold text-white pt-5">FAQ</h4>
+        <div class="container-fluid dark-blue-bg ">
+            <div id="faq " class="container px-4 pb-5 ">
+                <div class="row pb-4 ">
+                    <div class="col d-flex justify-content-center ">
+                        <h4 class="fw-semi-bold text-white pt-5 ">FAQ</h4>
                     </div>
                 </div>
-                <div class="mx-lg-5 px-lg-5" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="accordion text-white" id="faq_accordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading0">
-                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                <div class="mx-lg-5 px-lg-5 " data-aos="fade-up " data-aos-duration="1000 ">
+                    <div class="accordion text-white " id="faq_accordion ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="heading0 ">
+                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#collapse0 " aria-expanded="false " aria-controls="collapse0 ">
                                     What is UX/UI design and SEO?
                                 </p>
                             </h2>
-                            <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="heading0" data-bs-parent="#faq_accordion">
-                                <div class="accordion-body">
+                            <div id="collapse0 " class="accordion-collapse collapse " aria-labelledby="heading0 " data-bs-parent="#faq_accordion ">
+                                <div class="accordion-body ">
                                     <p>UX stands for user experience and encompasses all aspects of the end-user's interaction with the company, its services, and its products. The aim of using UX tools is to understand your users, their needs, and pains
                                         to provide them with an enjoyable and engaging experience while using your product. It is an iterative process to create easy-to-use, intuitive digital products<br>UI stands for user interface, and it is the process
                                         of designing the graphical layout of your products. The goal of UI design is to create an aesthetic look and feel for your website, that is accessible and visually appealing. UI design focuses on visual touchpoints
@@ -874,15 +887,15 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading1">
-                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="heading1 ">
+                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#collapse1 " aria-expanded="false " aria-controls="collapse1 ">
                                     What separates us from other UI/UX and product design agencies?
                                 </p>
                             </h2>
-                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faq_accordion">
-                                <div class="accordion-body">
+                            <div id="collapse1 " class="accordion-collapse collapse " aria-labelledby="heading1 " data-bs-parent="#faq_accordion ">
+                                <div class="accordion-body ">
                                     <p>We are a newly formed product design agency founded by a brother-sister duo, Péter and Anett. Péter has more than 20 years of experience with companies in the field of pharma, medtech, agrar, paper and steel industries,
                                         plus contract manufacturing. His broad knowledge of company processes helps us to understand your needs and the service you expect. After finishing university Anett spent numerous years working for one of the top
                                         agencies in Hungary, designing complex applications and websites for Austrian and Hungarian fin-tech and banking institutions. <br> We have started our company because we believe small and medium businesses deserve
@@ -892,104 +905,104 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading2">
-                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="heading2 ">
+                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#collapse2 " aria-expanded="false " aria-controls="collapse2 ">
                                     To what extend will I be included in the design process?
                                 </p>
                             </h2>
-                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faq_accordion">
-                                <div class="accordion-body">
+                            <div id="collapse2 " class="accordion-collapse collapse " aria-labelledby="heading2 " data-bs-parent="#faq_accordion ">
+                                <div class="accordion-body ">
                                     <p>We believe collaboration is the key to a successful partnership, that’s why we work closely with our clients. To ensure we interpret your vision well, we organize meetings regularly where we present our process and
                                         grant access to an online link where you can comment on the designs whenever you want.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading3">
-                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="heading3 ">
+                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#collapse3 " aria-expanded="false " aria-controls="collapse3 ">
                                     How long does it take to finish a project?
                                 </p>
                             </h2>
-                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faq_accordion">
-                                <div class="accordion-body">
+                            <div id="collapse3 " class="accordion-collapse collapse " aria-labelledby="heading3 " data-bs-parent="#faq_accordion ">
+                                <div class="accordion-body ">
                                     <p>Every project has its unique needs, and the scope and timeline can only be defined after we have discussed your goals and objectives. The time needed depends on various factors, such as complexity, the required services,
                                         the frequency of meetings and the number of changes requested. The basic changes can be done within one or two weeks, whereas complex modifications can take several weeks.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading4">
-                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="heading4 ">
+                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#collapse4 " aria-expanded="false " aria-controls="collapse4 ">
                                     How do you develop websites?
                                 </p>
                             </h2>
-                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faq_accordion">
-                                <div class="accordion-body">
+                            <div id="collapse4 " class="accordion-collapse collapse " aria-labelledby="heading4 " data-bs-parent="#faq_accordion ">
+                                <div class="accordion-body ">
                                     <p>We use WordPress, which is the most used (more than 40% of all websites on the Internet are created with it) open-source content management system in the world. WordPress allows us to build various functionalities to
                                         your website (contact form, newsletter service, live chat, etc.), which can be optimized for mobile and SEO-friendly. More importantly, you can easily manage your content by yourself.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading5">
-                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="heading5 ">
+                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#collapse5 " aria-expanded="false " aria-controls="collapse5 ">
                                     What process do you use at your agency?
                                 </p>
                             </h2>
-                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faq_accordion">
-                                <div class="accordion-body">
+                            <div id="collapse5 " class="accordion-collapse collapse " aria-labelledby="heading5 " data-bs-parent="#faq_accordion ">
+                                <div class="accordion-body ">
                                     <p>The basis of our process is the design thinking and the double diamond framework. However, every project is different and has its unique needs and requirements. Therefore we modify and shape our processes to suit your
                                         needs best. We believe by applying these human-centered iterative processes, we can understand users better, challenge assumptions and create innovative solutions for your business.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading6">
-                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="heading6 ">
+                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#collapse6 " aria-expanded="false " aria-controls="collapse6 ">
                                     Do you provide maintenance services?
                                 </p>
                             </h2>
-                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#faq_accordion">
-                                <div class="accordion-body">
+                            <div id="collapse6 " class="accordion-collapse collapse " aria-labelledby="heading6 " data-bs-parent="#faq_accordion ">
+                                <div class="accordion-body ">
                                     <p>Yes, after we created your website you can hire us for additional maintenance services to keep your website up-to-date, and add any additional content or feature to it.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading7">
-                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="heading7 ">
+                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#collapse7 " aria-expanded="false " aria-controls="collapse7 ">
                                     Do you also redesign existing websites?
                                 </p>
                             </h2>
-                            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#faq_accordion">
-                                <div class="accordion-body">
+                            <div id="collapse7 " class="accordion-collapse collapse " aria-labelledby="heading7 " data-bs-parent="#faq_accordion ">
+                                <div class="accordion-body ">
                                     <p>Yes, we gladly help you modernize your existing website to meet the requirements of today’s users. Whether you need a full rebranding, or would like to generate more leads and make your website accessible, we are ready
                                         for the challenge.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading8">
-                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        <hr class="w-100 my-2 border-1 border-top border-color-main-grey ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header " id="heading8 ">
+                                <p class="fw-bold accordion-button my-2 my-sm-0 collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#collapse8 " aria-expanded="false " aria-controls="collapse8 ">
                                     Where are you located?
                                 </p>
                             </h2>
-                            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#faq_accordion">
-                                <div class="accordion-body">
+                            <div id="collapse8 " class="accordion-collapse collapse " aria-labelledby="heading8 " data-bs-parent="#faq_accordion ">
+                                <div class="accordion-body ">
                                     <p>We are based in Budapest, Hungary, and Innsbruck, Austria, however our meetings and presentations are held online.
                                     </p>
                                 </div>
@@ -1003,30 +1016,30 @@
 
         <footer>
             <div class="container ">
-                <h3 class="fw-bold color-main-dark">Leave no user behind!</h3>
+                <h3 class="fw-bold color-main-dark ">Leave no user behind!</h3>
                 <br>
-                <p><img src="img/footer/mail_blue.svg" alt="e-mail" style="margin-top: -2px;">&nbsp;&nbsp;<a class="" href="mailto: info@apswonder.com"><u>info@apswonder.com</u></a></p>
+                <p><img src="img/footer/mail_blue.svg " alt="e-mail " style="margin-top: -2px; ">&nbsp;&nbsp;<a class=" " href="mailto: info@apswonder.com "><u>info@apswonder.com</u></a></p>
             </div>
         </footer>
     </main>
     <script src="js/bootstrap.min.js "></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12 "></script>
     <script src="js/offcanvas.js "></script>
     <script src="js/navscroll.js "></script>
     <script src="js/typed.js "></script>
     <script src="js/removehash.js "></script>
     <script src="js/glide.js "></script>
     <!-- <script defer src="js/bundle.js "></script> -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>
     <script>
         AOS.init();
     </script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/dynamics.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js "></script>
+    <script src="js/masonry.pkgd.min.js "></script>
+    <script src="js/dynamics.min.js "></script>
+    <script src="js/classie.js "></script>
+    <script src="js/main.js "></script>
     <script>
         (function() {
             function getRandomInt(min, max) {
@@ -1047,18 +1060,18 @@
                             type: dynamics.bezier,
                             duration: 500,
                             points: [{
-                                "x": 0,
-                                "y": 0,
-                                "cp": [{
-                                    "x": 0.2,
-                                    "y": 1
+                                "x ": 0,
+                                "y ": 0,
+                                "cp ": [{
+                                    "x ": 0.2,
+                                    "y ": 1
                                 }]
                             }, {
-                                "x": 1,
-                                "y": 1,
-                                "cp": [{
-                                    "x": 0.3,
-                                    "y": 1
+                                "x ": 1,
+                                "y ": 1,
+                                "cp ": [{
+                                    "x ": 0.3,
+                                    "y ": 1
                                 }]
                             }],
                             delay: (itemstotal - pos - 1) * 40
