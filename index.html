@@ -974,7 +974,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 mb-md-0 mb-5 pt-5 pe-lg-5 pe-0">
-                    <form name="contact" method="POST" data-netlify="true" class="row g-3">
+                    <form name="contact" method="POST" action="./#success" data-netlify="true" class="row g-3">
                         <div class="col-lg-6 mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" name="name" id="name" required="">
@@ -1279,7 +1279,6 @@
             </div>
         </div>
         </div>
-
         <footer>
             <div class="container">
                 <h3 class="fw-bold color-main-dark">Leave no user behind!</h3>
@@ -1288,6 +1287,25 @@
                         class="" href="mailto: info@apswonder.com"><u>info@apswonder.com</u></a></p>
             </div>
         </footer>
+        <!-- Modal -->
+        <div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img class="d-inline-block" src="img/confirmation_illustration.svg" alt="flower" height="80%">
+                    <br>
+                    Your submission has been received.<br/> We will be in touch and contact you soon.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
     </main>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -1350,6 +1368,13 @@
                 }
             });
         })();
+    </script>
+    <script type="text/javascript">
+        var url = window.location.href;
+        var msg = document.getElementById('success');
+        if( url.search( 'success' ) > 0 ) {
+          msg.style.display = "block";
+        }
     </script>
 
 </body>
