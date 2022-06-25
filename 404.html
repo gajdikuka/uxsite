@@ -93,15 +93,139 @@
     <link rel="icon" href="img/logo.svg" />
     <link href="css/index.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/404.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="color-main-dark">
-    
-    <main>
-        404
+<body class="color-main-dark vh-100 p-0 overflow-hidden">
+    <header>
+        <nav class="navbar-expand-lg fixed-nav navbar" aria-label="Main navigation">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand remove-hash d-lg-none" href="../#main">
+                    <h3 class="fw-bold m-0">
+                        <img style="height: 2rem;" src="img/logo.png" alt="logo">
+                        <span class="color-main-blue">&nbsp;&nbsp;aps </span>wonder
+                    </h3>
+                </a>
+                <button class="navbar-toggler navbutton p-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                    <div class="navicon"><span></span><span></span><span></span><span></span></div>
+                </button>
+                <div class="navbar-collapse d-flex flex-column justify-content-between offcanvas-collapse"
+                    id="navbarsExampleDefault">
+                    <div class="row border-lg-top justify-content-between order-0 order-lg-1 w-100">
+                        <div class="col d-flex align-self-center align-items-center d-none d-lg-block">
+                            <a class="navbar-brand remove-hash d-block" href=" ../#main">
+                                <h3 class="fw-bold m-0">
+                                    <img style="height: 2rem;" src="img/logo.png" alt="logo">
+                                    <span class="color-main-blue">&nbsp;&nbsp;aps </span>wonder
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col d-flex justify-content-lg-end">
+                            <ul class="fw-semi-bold navbar-nav my-3">
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link remove-hash" href="#services">Services</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link remove-hash" href="../#usecases">Usecases</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link remove-hash" href="#packages">Packages</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link remove-hash px-4 py-2 d-none d-lg-block button" href="#contact"
+                                        role="button">
+                                        <span>Contact us</span>
+                                    </a>
+                                    <a class="nav-link remove-hash d-lg-none" href="#contact" role="button">
+                                        <span class="color-main-pink">Contact us</span>
+                                    </a>
+                                </li>
+                                <!-- FOR LANGUAGE SELECTION ALSO SEE CSS <li class="nav-item mx-3 dropdown">
+                                    <a class="nav-link dropdown-toggle disabled" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="img/uk.svg" height="26" alt="UK flag" loading="lazy"> Eng
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="img/uk.svg" height="26" alt="AU flag" loading="lazy"> DE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                            </ul>
+                        </div>
+
+                    </div>
+                    <ul class="navbar-nav mb-5 mb-lg-0 ms-lg-auto small-navbar order-1 order-lg-0 mr-4">
+                        <li class="nav-item color-main-grey">
+                            <a class="small-nav-link nav-link remove-hash" href="tel:+43 676 6231339">
+                                <img src="img/phone.svg" alt="telephone icon">
+                                <span class="small">+43 676 6231339</span>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-block nav-item color-main-grey">
+                            <a class="small-nav-link  nav-link remove-hash">
+                                <span class="small">|</span>
+                            </a>
+                        </li>
+                        <li class="nav-item color-main-grey">
+                            <a class="small-nav-link  nav-link remove-hash" href="mailto: info@apswonder.com">
+                                <img src="img/email.svg" alt="email icon">
+                                <span class="small">info@apswonder.com</span>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-block nav-item color-main-grey">
+                            <a class="small-nav-link  nav-link remove-hash">
+                                <span class="small">|</span>
+                            </a>
+                        </li>
+                        <li class="nav-item color-main-grey">
+                            <a class="small-nav-link  nav-link remove-hash"
+                                href="https://goo.gl/maps/wNKBGAbiMkAGSQMf8" target="_blank">
+                                <img src="img/location.svg" alt="location icon">
+                                <span class="small">Rum, Austria</span>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-block nav-item color-main-grey">
+                            <a class="small-nav-link  nav-link remove-hash">
+                                <span class="small">|</span>
+                            </a>
+                        </li>
+                        <li class="nav-item color-main-grey me-lg-3 mb-5 mb-lg-0">
+                            <a class="small-nav-link  nav-link remove-hash"
+                                href="https://goo.gl/maps/k2BxnbGJ86S51zEy5" target="_blank">
+                                <img src="img/location.svg" alt="location icon">
+                                <span class="small">Budapest, Hungary</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main class="h-100 d-flex align-items-center justify-content-center">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-12">
+                <h1 class="d-inline-block align-middle display-c-1 fw-bold ">4</h1>
+                <img class="d-inline-block align-middle" src="img/error_svg.svg" width="35%" alt="zero">
+                <h1 class="d-inline-block align-middle display-c-1 fw-bold ">4</h1>
+              </div>
+              <div class="col-12 mt-3">
+                  <h2 class="fw-bold">Page not found</h2>
+                  <p class="">This page does not exit or was removed</p>
+              </div>
+        </div>
         <footer>
+
         </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/offcanvas.js"></script>
+        <script src="js/navscroll.js"></script>
+        <script src="js/removehash.js"></script>
+        <script src="js/main.js"></script>
     </main>
     
 </body>
