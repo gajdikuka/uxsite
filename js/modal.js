@@ -1,8 +1,7 @@
 (function() {
     'use strict'
-    var url = window.location.href;
-    var msg = document.getElementById('success');
-    if( url.search( 'success' ) > 0 ) {
-        msg.style.display = "block";
+    if( window.location.href.search( 'success' ) > 0 ) {
+        var myModal = new bootstrap.Modal(document.getElementById('success'))
+        myModal.show()
     }
 })()
