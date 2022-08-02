@@ -18,6 +18,18 @@ h5 {
     line-height: 32px !important;
 }
 
+.h3-list {
+    line-height: 32px !important;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.usecases-button {
+    line-height: 32px !important;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
 .hero-description {
     padding-bottom: 1rem;
     padding-top: 2rem;
