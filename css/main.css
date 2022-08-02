@@ -87,7 +87,7 @@ h5 {
 }
 
 .color-main-pink {
-    color: #D7258F;
+    color: #D31085;
 }
 
 .light-blue-bg {
@@ -129,7 +129,7 @@ h5 {
     flex: 0 0 160px;
     color: #ffffff !important;
     border-radius: 0.75rem!important;
-    background-color: #EF40A9;
+    background-color: #D31085;
 }
 
 .button:hover {
